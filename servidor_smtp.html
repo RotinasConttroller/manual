@@ -1,0 +1,254 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Guia de Orientações e Treinamentos &nbsp;&gt; Módulo Vendas &gt; NF_e 2G - Nota Fiscal Eletrônica &gt; Reenviar E-mail Individual &gt; Servidor SMTP</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   /* <meta name="generator" content="Help &amp; Manual" /> */
+   <meta name="keywords" content="" />
+   <meta name="description" content="Servidores POP3 e SMTP de Vários Provedores &nbsp; 1.&nbsp;Provedor UOL (Universo On-Line): POP3:&nbsp;pop.uol.com.br SMTP:&nbsp;smtp.uol.com.br Porta SMTP:&nbsp;25 , &nbsp;Porta POP3:&nbsp;110 Autenticação d" />
+   <meta http-equiv="X-UA-Compatible" content="IE=8" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet">
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+             padding:0; 
+             overflow: hidden;
+             background: #FFFFFF; 
+       } 
+
+      div#printheader { display: none; }
+      #idheader { width:100%; 
+                  height:auto; 
+                  padding: 0; 
+                  margin: 0; 
+       } 
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+  </style>
+   <noscript>
+   <style type="text/css">
+   html, body { overflow: auto; }
+   </style> 
+   </noscript>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #idheader, #printheader img { display:none; }
+      #printheader { display: block; margin-top: 20px; }
+      #idcontent { margin-top: 10px; }
+   </style>   
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "servidor_smtp.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<div id="breadcrumbs" style="display:none"><a href="guiadeorientacoestreinamentos.html">Guia de Orientações e Treinamentos&nbsp;</a> &gt; <a href="modulo_vendas.html">Módulo Vendas</a> &gt; <a href="nf_e_2g.html">NF_e 2G - Nota Fiscal Eletrônica</a> &gt; <a href="reenviar_e-mail_.html">Reenviar E-mail Individual</a></div>
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Servidor SMTP</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;background:url(topic_header_background.jpg)" cellspacing="0" cellpadding="0"> 
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="guiadeorientacoestreinamentos.html">Guia de Orientações e Treinamentos&nbsp;</a> &gt; <a href="modulo_vendas.html">Módulo Vendas</a> &gt; <a href="nf_e_2g.html">NF_e 2G - Nota Fiscal Eletrônica</a> &gt; <a href="reenviar_e-mail_.html">Reenviar E-mail Individual</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Servidor SMTP</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="reenviar_e-mail_por_lote.html"
+        onmouseover="document.images.prev.src='hm_btn_navigate_prev_orange.png'" 
+        onmouseout="document.images.prev.src='hm_btn_navigate_prev.png'"
+        ><img name="prev" src="hm_btn_navigate_prev.png" 
+        border=0 alt="Página anterior"
+        ></a><a href="reenviar_e-mail_.html"
+        onmouseover="document.images.main.src='hm_btn_navigate_top_orange.png'" 
+        onmouseout="document.images.main.src='hm_btn_navigate_top.png'"><img 
+        name=main src="hm_btn_navigate_top.png" 
+        border=0 alt="Voltar à visão geral do capítulo"
+        ></a><a href="contigencia.html"
+        onmouseover="document.images.next.src='hm_btn_navigate_next_orange.png'" 
+        onmouseout="document.images.next.src='hm_btn_navigate_next.png'"><img name=next src="hm_btn_navigate_next.png" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>  
+</table>
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p style="text-align: center;"><span style="font-size: 14pt; font-weight: bold; color: #ff6600; text-decoration: underline;">Servidores POP3 e SMTP de Vários Provedores</span></p>
+<p style="text-align: center;"><span style="font-size: 14pt; font-family: 'Times New Roman';"> </span></p>
+<p style="text-indent: 15px; margin: 10px 10px 10px 10px;"><span style="font-size: 11pt; font-weight: bold; color: #0000ff;">1.</span><span style="font-size: 11pt; font-weight: bold;"> </span><span style="font-size: 11pt; font-weight: bold; color: #ff0000;">Provedor UOL (Universo On-Line):</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">POP3:</span><span style="font-size: 11pt;"> pop.uol.com.br</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">SMTP:</span><span style="font-size: 11pt;"> smtp.uol.com.br</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Porta SMTP: </span><span style="font-size: 11pt;">25 , </span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Porta POP3: </span><span style="font-size: 11pt;">110</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Autenticação de Segurança? : </span><span style="font-size: 11pt;">Sim</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Necessita Conexão Segura SSL?:</span><span style="font-size: 11pt;"> Não</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold; color: #111111;">Usuário (Servidor POP e SMTP):</span><span style="font-size: 11pt; color: #111111;"> preencha o seu gmail. Exemplo:</span><span style="font-size: 11pt; color: #0000ff; text-decoration: underline;">XXXXXX@gmail.com</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold; color: #111111;">Senha (Servidor POP e SMTP):</span><span style="font-size: 11pt; color: #111111;"> senha do e-mail</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold; color: #111111;">e-mail do remetente:</span><span style="font-size: 11pt; color: #111111;"> e-mail do usuário</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 15px; margin: 10px 10px 10px 10px;"><span style="font-size: 11pt; font-weight: bold; color: #0000ff;">2.</span><span style="font-size: 11pt; font-weight: bold;"> </span><span style="font-size: 11pt; font-weight: bold; color: #ff0000;">Provedor Terra:</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">POP3:</span><span style="font-size: 11pt;"> </span><span style="font-size: 11pt; color: #111111;">pop.sigla_da_operadora.terra.com.br </span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">SMTP:</span><span style="font-size: 11pt;"> </span><span style="font-size: 11pt; color: #111111;">smtp.sigla_da_operadora.terra.com.br </span><span style="font-size: 11pt; font-weight: bold;"> </span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Porta SMTP: </span><span style="font-size: 11pt;">25 ou 465 </span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Porta POP3: </span><span style="font-size: 11pt;">110</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Necessita Conexão Segura SSL?:</span><span style="font-size: 11pt;"> Não</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Autenticação de Segurança? : </span><span style="font-size: 11pt;">Sim</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold; color: #111111;">Usuario (Servidor POP e SMTP):</span><span style="font-size: 11pt; color: #111111;"> preencha o seu email Terra, sem o @terra.com.br. Exemplo: XXXXXX</span></p>
+<p style="text-align: justify; text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold; color: #111111;">Senha (Servidor POP e SMTP):</span><span style="font-size: 11pt; color: #111111;"> senha do e-mail</span></p>
+<p style="text-align: justify; margin: 0px 0px 0px 51px;"><span style="color: #111111;">É necessário saber a sigla da sua operadora Terra. Procure pelo campo “Operadora TERRA” nos seus dados cadastrais na central do assinante do Terra. Pegue esse valor e substitua-o onde for especificado sigla_da_operadora nas instruções abaixo.</span></p>
+<p style="text-align: justify; margin: 8px 0px 16px 51px;"><span style="color: #111111;">Tendo a sigla da operadora em mãos, inicie o Thunderbird e crie uma conta para o Terra</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 15px; margin: 10px 10px 10px 10px;"><span style="font-size: 11pt; font-weight: bold; color: #0000ff;">3.</span><span style="font-size: 11pt; font-weight: bold;"> </span><span style="font-size: 11pt; font-weight: bold; color: #ff0000;">Provedor IG (Internet Generation):</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">POP3:</span><span style="font-size: 11pt;"> pop.ig.com.br</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">SMTP:</span><span style="font-size: 11pt;"> smtp.ig.com.br</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Porta SMTP: </span><span style="font-size: 11pt;">465 ou 25</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Porta POP3: </span><span style="font-size: 11pt;">995 ou 110</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Necessita Conexão Segura SSL?:</span><span style="font-size: 11pt;"> Sim</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Autenticação de Segurança? : </span><span style="font-size: 11pt;">Sim</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold; color: #111111;">Usuário (Servidor POP e SMTP):</span><span style="font-size: 11pt; color: #111111;"> preencha com o seu email IG, sem o @ig.com.br. Exemplo: XXXXXX</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold; color: #111111;">Senha (Servidor POP e SMTP):</span><span style="font-size: 11pt; color: #111111;"> senha do e-mail</span><br />
+<span style="font-size: 14pt; font-family: 'Times New Roman';"> </span></p>
+<p style="text-indent: 15px; margin: 10px 10px 10px 10px;"><span style="font-size: 11pt; font-weight: bold; color: #0000ff;">4.</span><span style="font-size: 11pt; font-weight: bold;"> </span><span style="font-size: 11pt; font-weight: bold; color: #ff0000;">Provedor iBest :</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">POP3:</span><span style="font-size: 11pt;"> pop.ibest.com.br</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">SMTP:</span><span style="font-size: 11pt;"> smtp.ibest.com.br</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Porta SMTP: </span><span style="font-size: 11pt;">465</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Porta POP3: </span><span style="font-size: 11pt;">995</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Necessita Conexão Segura SSL?:</span><span style="font-size: 11pt;"> Sim</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Autenticação de Segurança? : </span><span style="font-size: 11pt;">Sim</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold; color: #111111;">Usuário (Servidor POP e SMTP):</span><span style="font-size: 11pt; color: #111111;"> preencha o seu email iBest. Exemplo: </span><span style="font-size: 11pt; color: #0000ff; text-decoration: underline;">XXXXXX @ibest.com.br</span><span style="font-size: 11pt; color: #111111;"> </span><br />
+<span style="font-size: 11pt; font-weight: bold; color: #111111;">Senha (Servidor POP e SMTP):</span><span style="font-size: 11pt; color: #111111;"> senha do e-mail</span><br />
+<span style="font-size: 11pt; color: #111111;">&nbsp;</span></p>
+<p style="text-indent: 15px; margin: 10px 10px 10px 10px;"><span style="font-size: 11pt; font-weight: bold; color: #0000ff;">5.</span><span style="font-size: 11pt; font-weight: bold;"> </span><span style="font-size: 11pt; font-weight: bold; color: #ff0000;">Provedor iTelefônica:</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">POP3:</span><span style="font-size: 11pt;"> pop.itelefonica.com.br</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">SMTP:</span><span style="font-size: 11pt;"> smtp.itelefonica.com.br</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Porta SMTP: </span><span style="font-size: 11pt;">25</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Porta POP3: </span><span style="font-size: 11pt;">110</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Necessita Conexão Segura SSL?:</span><span style="font-size: 11pt;"> Não</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Autenticação de Segurança? : </span><span style="font-size: 11pt;">Sim</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 15px; margin: 10px 10px 10px 10px;"><span style="font-size: 11pt; font-weight: bold; color: #0000ff;">6.</span><span style="font-size: 11pt; font-weight: bold;"> </span><span style="font-size: 11pt; font-weight: bold; color: #ff0000;">Provedor Gmail (Google Mail):</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">POP3:</span><span style="font-size: 11pt;"> pop.gmail.com.br</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">SMTP:</span><span style="font-size: 11pt;"> smtp.gmail.com.br</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Porta SMTP: </span><span style="font-size: 11pt;">465</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Porta POP3: </span><span style="font-size: 11pt;">995</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Necessita Conexão Segura SSL?:</span><span style="font-size: 11pt;"> Sim</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Autenticação de Segurança? : </span><span style="font-size: 11pt;">Sim</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold; color: #111111;">Usuário (Servidor POP e SMTP):</span><span style="font-size: 11pt; color: #111111;"> preencha o seu gmail. exemplo:</span><span style="font-size: 11pt; color: #0000ff; text-decoration: underline;">XXXXXX@gmail.com</span><span style="font-size: 11pt; color: #111111;"> </span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold; color: #111111;">Senha (Servidor POP e SMTP):</span><span style="font-size: 11pt; color: #111111;"> senha do e-mail</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 15px; margin: 10px 10px 10px 10px;"><span style="font-size: 11pt; font-weight: bold; color: #0000ff;">7.</span><span style="font-size: 11pt; font-weight: bold;"> </span><span style="font-size: 11pt; font-weight: bold; color: #ff0000;">Provedor Yahoo </span><span style="font-size: 11pt; font-weight: bold; color: #0000ff; text-decoration: underline;">(@yahoo.com.br</span><span style="font-size: 11pt; font-weight: bold; color: #ff0000;"> ; @ymail.com ; @rocketmail.com) :</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">POP3:</span><span style="font-size: 11pt;"> pop.mail.yahoo.com.br</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">SMTP:</span><span style="font-size: 11pt;"> smtp.mail.yahoo.com</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Porta SMTP: </span><span style="font-size: 11pt;">587 (rede) ou 465 (local)</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Porta POP3: </span><span style="font-size: 11pt;">110</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Necessita Conexão Segura SSL?:</span><span style="font-size: 11pt;"> Sim (465) Não (587)</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Autenticação de Segurança? : </span><span style="font-size: 11pt;">Sim</span></p>
+<p style="text-indent: 1px; margin: 0px 10px 0px 41px;"><span style="font-size: 11pt; font-weight: bold; color: #111111;">Usuário (Servidor POP e SMTP):</span><span style="font-size: 11pt; color: #111111;"> preencha o seu ID Yahoo. Exemplo: se seu e-mail for </span><span style="font-size: 11pt; color: #0000ff; text-decoration: underline;">XXXXXX@yahoo.com.br</span><span style="font-size: 11pt; color: #111111;">, informe apenas XXXXXX </span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold; color: #111111;">Senha (Servidor POP e SMTP):</span><span style="font-size: 11pt; color: #111111;"> senha do e-mail</span></p>
+<p style="margin: 8px 0px 0px 41px;"><span style="font-family: 'Trebuchet MS'; color: #111111;">Depende de como você está registrado no Yahoo. Se o seu email for @yahoo.com (sem .br) ele não vai funcionar. Se for @yahoo.com.br siga as instruções abaixo.</span></p>
+<p style="margin: 8px 0px 0px 0px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 14pt; font-family: 'Times New Roman';"> </span><span style="font-size: 11pt; font-weight: bold; color: #0000ff;">8.</span><span style="font-size: 11pt; font-weight: bold;"> </span><span style="font-size: 11pt; font-weight: bold; color: #ff0000;">Hotmail:</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">POP3:</span><span style="font-size: 11pt;"> pop3.live.com</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">SMTP:</span><span style="font-size: 11pt;"> smtp.live.com</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Porta SMTP: </span><span style="font-size: 11pt;">25</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Porta POP3: </span><span style="font-size: 11pt;">995</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Necessita Conexão Segura SSL?:</span><span style="font-size: 11pt;"> Sim</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Autenticação de Segurança? : </span><span style="font-size: 11pt;">Sim</span></p>
+<p style="margin: 8px 0px 16px 39px;"><span style="font-size: 14pt; font-family: 'Times New Roman';"> </span><span style="font-family: 'Trebuchet MS'; color: #111111;">O Hotmail foi feito para comunicar-se apenas com o Outlook e Outlook Express (pois pertencem a mesma empresa). Crie uma conta de e-mail em outro servidor.</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 15px; margin: 10px 10px 10px 10px;"><span style="font-size: 11pt; font-weight: bold; color: #0000ff;">9.</span><span style="font-size: 11pt; font-weight: bold;"> </span><span style="font-size: 11pt; font-weight: bold; color: #ff0000;">Provedor BOL (Brasil On-Line):</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">POP3:</span><span style="font-size: 11pt;"> pop3.bol.com.br</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">SMTP:</span><span style="font-size: 11pt;"> smtp.bol.com.br</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Autenticação de Segurança? : </span><span style="font-size: 11pt;">Sim</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Porta SMTP: </span><span style="font-size: 11pt;">25</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Porta POP3: </span><span style="font-size: 11pt;">110</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Necessita Conexão Segura SSL?:</span><span style="font-size: 11pt;"> Não</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 14pt; font-family: 'Times New Roman';"> </span></p>
+<p style="text-indent: 15px; margin: 10px 10px 10px 10px;"><span style="font-size: 11pt; font-weight: bold; color: #0000ff;">10.</span><span style="font-size: 11pt; font-weight: bold;"> </span><span style="font-size: 11pt; font-weight: bold; color: #ff0000;">Provedor POP (Pop On-Line):</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">POP3:</span><span style="font-size: 11pt;"> correio.pop.com.br</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">SMTP:</span><span style="font-size: 11pt;"> smtp.pop.com.br</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Porta SMTP: </span><span style="font-size: 11pt;">25</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Porta POP3: </span><span style="font-size: 11pt;">110</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Necessita Conexão Segura SSL?:</span><span style="font-size: 11pt;"> Não</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Autenticação de Segurança? : </span><span style="font-size: 11pt;">Não</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold; color: #111111;">Usuário (Servidor POP e SMTP):</span><span style="font-size: 11pt; color: #111111;"> preencha o seu email POP, sem o @pop.com.br. Exemplo: XXXXXX</span></p>
+<p style="margin: 10px 10px 10px 39px;"><span style="font-size: 11pt; font-weight: bold; color: #111111;">Senha (Servidor POP e SMTP):</span><span style="font-size: 11pt; color: #111111;"> senha do e-mail</span></p>
+<p style="text-indent: 15px; margin: 10px 10px 10px 10px;"><span style="font-size: 11pt; font-weight: bold; color: #0000ff;">11.</span><span style="font-size: 11pt; font-weight: bold;"> </span><span style="font-size: 11pt; font-weight: bold; color: #ff0000;">Provedor LocaWeb (sites hospedados na locaweb):</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">POP3:</span><span style="font-size: 11pt;"> </span><span style="font-size: 11pt; color: #111111;">pop.SEUDOMINIO Exemplo: pop.superlogica.com</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">SMTP:</span><span style="font-size: 11pt;"> </span><span style="font-size: 11pt; color: #111111;">smtp.SEUDOMINIO Exemplo: smtp.superlogica.com</span><span style="font-size: 11pt; font-weight: bold;"> </span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Porta SMTP: </span><span style="font-size: 11pt;">25</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Porta POP3: </span><span style="font-size: 11pt;">110</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Necessita Conexão Segura SSL?:</span><span style="font-size: 11pt;"> Não</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Autenticação de Segurança? : </span><span style="font-size: 11pt;">Sim</span></p>
+<p style="text-indent: -2px; margin: 0px 10px 0px 42px;"><span style="font-size: 11pt; font-weight: bold; color: #111111;">Usuário (Servidor POP e SMTP):</span><span style="font-size: 11pt; color: #111111;"> substitua o &quot;@&quot; do seu e-mail por &quot;:&quot;. Exemplo: se seu e-mail for </span><span style="font-size: 11pt; color: #0000ff; text-decoration: underline;">XXXXX@superlogica.com</span><span style="font-size: 11pt; color: #111111;">, informe apenas </span><span style="font-size: 11pt; color: #0000ff; text-decoration: underline;">XXXXXX:superlogica.com</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold; color: #111111;">Senha (Servidor POP e SMTP):</span><span style="font-size: 11pt; color: #111111;"> senha do e-mail</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-indent: 15px; margin: 10px 10px 10px 10px;"><span style="font-size: 11pt; font-weight: bold; color: #0000ff;">12.</span><span style="font-size: 11pt; font-weight: bold;"> </span><span style="font-size: 11pt; font-weight: bold; color: #ff0000;">Provedor Click21:</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">POP3:</span><span style="font-size: 11pt;"> </span><span style="font-size: 11pt; color: #111111;">pop.click21.com.br</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">SMTP:</span><span style="font-size: 11pt;"> </span><span style="font-size: 11pt; color: #111111;">smtp.click21.com.br</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Porta SMTP: </span><span style="font-size: 11pt;">25</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Porta POP3: </span><span style="font-size: 11pt;">110</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Necessita Conexão Segura SSL?:</span><span style="font-size: 11pt;"> Não</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Autenticação de Segurança? : </span><span style="font-size: 11pt;">Sim</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold; color: #111111;">Usuário (Servidor POP e SMTP):</span><span style="font-size: 11pt; color: #111111;"> preencha o seu email Click 21. Exemplo: </span><span style="font-size: 11pt; color: #0000ff; text-decoration: underline;">XXXXXXX@click21.com.br</span><span style="font-size: 11pt; color: #111111;"> </span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold; color: #111111;">Senha (Servidor POP e SMTP):</span><span style="font-size: 11pt; color: #111111;"> senha do e-mail</span><br />
+<span style="font-size: 11pt; color: #111111;">&nbsp;</span></p>
+<p style="text-indent: 15px; margin: 10px 10px 10px 10px;"><span style="font-size: 11pt; font-weight: bold; color: #0000ff;">13.</span><span style="font-size: 11pt; font-weight: bold;"> </span><span style="font-size: 11pt; font-weight: bold; color: #ff0000;">Provedor Globo:</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">POP3:</span><span style="font-size: 11pt;"> </span><span style="font-size: 11pt; color: #111111;">pop3.globo.com</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">SMTP:</span><span style="font-size: 11pt;"> </span><span style="font-size: 11pt; color: #111111;">smtp.globo.com </span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Porta SMTP: </span><span style="font-size: 11pt;">25</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Porta POP3: </span><span style="font-size: 11pt;">110</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Necessita Conexão Segura SSL?:</span><span style="font-size: 11pt;"> Não</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold;">Autenticação de Segurança? : </span><span style="font-size: 11pt;">Sim</span></p>
+<p style="text-indent: 30px; margin: 0px 10px 0px 10px;"><span style="font-size: 11pt; font-weight: bold; color: #111111;">Usuário (Servidor POP e SMTP):</span><span style="font-size: 11pt; color: #111111;"> preencha o seu email globo.com, sem o @globo.com. Exemplo: XXXXXX</span></p>
+<p style="line-height: 1.15; margin: 0px 0px 13px 40px;"><span style="font-size: 11pt; font-weight: bold; color: #111111;">Senha (Servidor POP e SMTP):</span><span style="font-size: 11pt; color: #111111;"> senha do e-mail</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this page:&nbsp;</b><a href="'+baseurl+'index.html' +
+'?servidor_smtp.html" target="_top">'+baseurl+'index.html?servidor_smtp.html</a></p>');
+
+</script>
+</body>
+</html>
