@@ -1,0 +1,756 @@
+﻿<!DOCTYPE HTML>
+<html><head>
+   <title>Guia de Orientações e Treiamnetos</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta name="robots" content="noindex,follow" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+ 
+   <!-- This line includes the general project style sheet (not required) -->
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <!-- This block defines the styles of the TOC headings, change them as needed -->
+   <style type="text/css">
+       body { }
+       .heading1 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading2 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading3 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading4 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading5 { font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading6 { font-size: 10pt; color: #000000; text-decoration: none; }
+
+       .hilight1 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight2 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight3 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight4 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight5 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight6 { font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+
+       /* TOC LIST CSS */
+       #toc    { padding:0; margin:0 }
+       #toc li { margin-top:2px; margin-left:0; padding:1px }
+       #toc ul { padding-left:0; margin-left:0px }       
+       /* TOC LIST CSS */
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript">
+     var parentScope = (parent.hmNavigationFrame);
+     if (!parentScope) {
+		      var s = document.createElement("script");
+		      s.setAttribute("type","text/javascript");
+		      s.setAttribute("src", "helpman_navigation.js");
+		      document.getElementsByTagName("head")[0].appendChild(s);
+	    }
+     else {
+       if (initialtocstate != "expandall") parent.hmAddCss(document, "#toc li ul { display: none }");
+     }
+     function loadicons() { var icons = new Array(); for (i=0; i<arguments.length; i++) { icons[i] = new Image(); icons[i].src = arguments[i]; } }
+     function loadtoc() { if (parentScope) parent.loadstate(document.getElementById("toc")); else loadstate(document.getElementById("toc")); }
+     function savetoc() { if (parentScope) parent.savestate(document.getElementById("toc")); else savestate(document.getElementById("toc")); }
+     function clicked(node, event) { deselect(); if (parentScope) parent.hmNodeClicked(node, event); else hmNodeClicked(node, event); }
+     function dblclicked(node) { if (parentScope) parent.hmNodeDblclicked(node); else hmNodeDblclicked(node); }
+     function deselect() { if (window.getSelection) window.getSelection().removeAllRanges(); else if (document.selection) document.selection.empty(); }
+     $(document).ready(function(){
+       loadtoc();
+       $(window).onunload = savetoc;
+     });
+   </script>
+</head>
+<body>
+<ul id="toc" style="list-style-type:none;display:block;padding-left:0">
+<li class="heading1" id="i1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a1" href="guiadeorientacoestreinamentos.html" target="hmcontent"><span class="heading1" id="s1" ondblclick="return dblclicked(this)">Guia de Orientações e Treinamentos&nbsp;</span></a>
+<ul id="ul1" style="list-style-type:none">
+<li class="heading2" id="i1.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.1" href="introducao.html" target="hmcontent"><span class="heading2" id="s1.1" ondblclick="return dblclicked(this)">Introdução</span></a>
+<ul id="ul1.1" style="list-style-type:none">
+<li class="heading3" id="i1.1.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.1.1" href="convencoes_utilizadas.html" target="hmcontent"><span class="heading3" id="s1.1.1">Convenções Utilizadas</span></a>
+</li>
+<li class="heading3" id="i1.1.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.1.2" href="estrutura_deste_manual.html" target="hmcontent"><span class="heading3" id="s1.1.2">Estrutura Deste Manual</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i1.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.2" href="visao_geral.html" target="hmcontent"><span class="heading2" id="s1.2" ondblclick="return dblclicked(this)">Visão Geral</span></a>
+<ul id="ul1.2" style="list-style-type:none">
+<li class="heading3" id="i1.2.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.2.1" href="menu_principal.html" target="hmcontent"><span class="heading3" id="s1.2.1">Menu Principal</span></a>
+</li>
+<li class="heading3" id="i1.2.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.2.2" href="cadastro.html" target="hmcontent"><span class="heading3" id="s1.2.2" ondblclick="return dblclicked(this)">Cadastros</span></a>
+<ul id="ul1.2.2" style="list-style-type:none">
+<li class="heading4" id="i1.2.2.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.2.2.1" href="cadastros_gerais.html" target="hmcontent"><span class="heading4" id="s1.2.2.1">Cadastros Gerais</span></a>
+</li>
+<li class="heading4" id="i1.2.2.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.2.2.2" href="cadastros_de_clientes_fornecedores.html" target="hmcontent"><span class="heading4" id="s1.2.2.2">Cadastros de Clientes/Fornecedores</span></a>
+</li>
+<li class="heading4" id="i1.2.2.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.2.2.3" href="cadastros_itens.html" target="hmcontent"><span class="heading4" id="s1.2.2.3">Cadastros Itens</span></a>
+</li>
+<li class="heading4" id="i1.2.2.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.2.2.4" href="cadastros_de_servicos.html" target="hmcontent"><span class="heading4" id="s1.2.2.4">Cadastros de Serviços</span></a>
+</li>
+<li class="heading4" id="i1.2.2.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.2.2.5" href="cadastros_de_vendedores.html" target="hmcontent"><span class="heading4" id="s1.2.2.5">Cadastros de Vendedores</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i1.2.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.2.3" href="conhecendo_os_botoes_e_navegab.html" target="hmcontent"><span class="heading3" id="s1.2.3">Conhecendo os Botões e navegabilidade do sistema</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i1.3" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.3" href="instalacaoeaberturadohc.html" target="hmcontent"><span class="heading2" id="s1.3" ondblclick="return dblclicked(this)">Instalação e Abertura do HC&nbsp;</span></a>
+<ul id="ul1.3" style="list-style-type:none">
+<li class="heading3" id="i1.3.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.3.1" href="ibexpert.html" target="hmcontent"><span class="heading3" id="s1.3.1" ondblclick="return dblclicked(this)">IBExpert</span></a>
+<ul id="ul1.3.1" style="list-style-type:none">
+<li class="heading4" id="i1.3.1.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.3.1.1" href="registrabase.html" target="hmcontent"><span class="heading4" id="s1.3.1.1">Registra Base&nbsp;</span></a>
+</li>
+<li class="heading4" id="i1.3.1.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.3.1.2" href="barrasdeferramentas.html" target="hmcontent"><span class="heading4" id="s1.3.1.2">Barras de Ferramentas</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i1.3.2" style="background:url(cicon2.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.3.2" href="instalacaofirebird.html" target="hmcontent"><span class="heading3" id="s1.3.2">Instalação Firebird</span></a>
+</li>
+<li class="heading3" id="i1.3.3" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.3.3" href="instalacaohc.html" target="hmcontent"><span class="heading3" id="s1.3.3" ondblclick="return dblclicked(this)">Instalação HC</span></a>
+<ul id="ul1.3.3" style="list-style-type:none">
+<li class="heading4" id="i1.3.3.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.3.3.1" href="sincronizador.html" target="hmcontent"><span class="heading4" id="s1.3.3.1" ondblclick="return dblclicked(this)">Sincronizador</span></a>
+<ul id="ul1.3.3.1" style="list-style-type:none">
+<li class="heading5" id="i1.3.3.1.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.3.3.1.1" href="instalando_serversinc_exe.html" target="hmcontent"><span class="heading5" id="s1.3.3.1.1">Instalando ServerSinc (Servidor)</span></a>
+</li>
+<li class="heading5" id="i1.3.3.1.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.3.3.1.2" href="instalando_serveclient.html" target="hmcontent"><span class="heading5" id="s1.3.3.1.2">Instalando ConttrollerSincZEOS (Cliente)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i1.3.3.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.3.3.2" href="instalacaoparametrizacaofibserver.html" target="hmcontent"><span class="heading4" id="s1.3.3.2" ondblclick="return dblclicked(this)">Instalação Parametrização FibServer</span></a>
+<ul id="ul1.3.3.2" style="list-style-type:none">
+<li class="heading5" id="i1.3.3.2.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.3.3.2.1" href="servidor.html" target="hmcontent"><span class="heading5" id="s1.3.3.2.1">Servidor</span></a>
+</li>
+<li class="heading5" id="i1.3.3.2.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.3.3.2.2" href="estacaofibserverexecultavellocal.html" target="hmcontent"><span class="heading5" id="s1.3.3.2.2">Estação FIBSERVER EXECUTAVEL - LOCAL</span></a>
+</li>
+<li class="heading5" id="i1.3.3.2.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.3.3.2.3" href="estacaofibserveratalho.html" target="hmcontent"><span class="heading5" id="s1.3.3.2.3">Estação FIBSERVER ATALHO</span></a>
+</li>
+<li class="heading5" id="i1.3.3.2.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.3.3.2.4" href="servidorcaixaonline.html" target="hmcontent"><span class="heading5" id="s1.3.3.2.4">Servidor Caixa - OnLine</span></a>
+</li>
+<li class="heading5" id="i1.3.3.2.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.3.3.2.5" href="estacaocaixa2fibs.html" target="hmcontent"><span class="heading5" id="s1.3.3.2.5">Estação Caixa - 2 FIBs</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i1.3.3.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.3.3.3" href="rede.html" target="hmcontent"><span class="heading4" id="s1.3.3.3">Rede</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i1.4" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.4" href="configuracoesbasicas.html" target="hmcontent"><span class="heading2" id="s1.4" ondblclick="return dblclicked(this)">Configurações Básicas&nbsp;</span></a>
+<ul id="ul1.4" style="list-style-type:none">
+<li class="heading3" id="i1.4.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.4.1" href="cadastro_de_empresas.html" target="hmcontent"><span class="heading3" id="s1.4.1" ondblclick="return dblclicked(this)">Cadastro de Empresas</span></a>
+<ul id="ul1.4.1" style="list-style-type:none">
+<li class="heading4" id="i1.4.1.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.4.1.1" href="estabelecimento.html" target="hmcontent"><span class="heading4" id="s1.4.1.1" ondblclick="return dblclicked(this)">Estabelecimento</span></a>
+<ul id="ul1.4.1.1" style="list-style-type:none">
+<li class="heading5" id="i1.4.1.1.1" style="background:url(cicon2.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.4.1.1.1" href="cadastro_estabelecimento.html" target="hmcontent"><span class="heading5" id="s1.4.1.1.1">Cadastro Estabelecimento</span></a>
+</li>
+<li class="heading5" id="i1.4.1.1.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.4.1.1.2" href="parametrizacao_dos_impostos_es.html" target="hmcontent"><span class="heading5" id="s1.4.1.1.2">Parametrização dos Impostos Estabelecimento</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i1.4.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.4.2" href="cadastro_de_usuarios.html" target="hmcontent"><span class="heading3" id="s1.4.2">Cadastro de Usuarios</span></a>
+</li>
+<li class="heading3" id="i1.4.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.4.3" href="parametrizacao_da_estacao.html" target="hmcontent"><span class="heading3" id="s1.4.3">Parametrização da Estação</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i1.5" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.5" href="modulo_cadastros.html" target="hmcontent"><span class="heading2" id="s1.5" ondblclick="return dblclicked(this)">Módulo Cadastros</span></a>
+<ul id="ul1.5" style="list-style-type:none">
+<li class="heading3" id="i1.5.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.5.1" href="visao_geral_de_todos_os_cadast.html" target="hmcontent"><span class="heading3" id="s1.5.1" ondblclick="return dblclicked(this)">Visão Geral de todos os Cadastros</span></a>
+<ul id="ul1.5.1" style="list-style-type:none">
+<li class="heading4" id="i1.5.1.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.5.1.1" href="cadastro_de_produtos.html" target="hmcontent"><span class="heading4" id="s1.5.1.1" ondblclick="return dblclicked(this)">Cadastro de Produtos</span></a>
+<ul id="ul1.5.1.1" style="list-style-type:none">
+<li class="heading5" id="i1.5.1.1.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.5.1.1.1" href="cadastro_produtos.html" target="hmcontent"><span class="heading5" id="s1.5.1.1.1" ondblclick="return dblclicked(this)">Cadastro Produtos</span></a>
+<ul id="ul1.5.1.1.1" style="list-style-type:none">
+<li class="heading6" id="i1.5.1.1.1.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.5.1.1.1.1" href="cadastro_produtos2.html" target="hmcontent"><span class="heading6" id="s1.5.1.1.1.1">Cadastro Produtos</span></a>
+</li>
+</ul>
+</li>
+<li class="heading5" id="i1.5.1.1.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.5.1.1.2" href="ncm.html" target="hmcontent"><span class="heading5" id="s1.5.1.1.2">NCM</span></a>
+</li>
+<li class="heading5" id="i1.5.1.1.3" style="background:url(cicon11.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.5.1.1.3" href="produtonotafiscaleletronica.html" target="hmcontent"><span class="heading5" id="s1.5.1.1.3">Nota Fiscal Eletronica</span></a>
+</li>
+<li class="heading5" id="i1.5.1.1.4" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.5.1.1.4" href="imposto_importacao.html" target="hmcontent"><span class="heading5" id="s1.5.1.1.4" ondblclick="return dblclicked(this)">Imposto Importação</span></a>
+<ul id="ul1.5.1.1.4" style="list-style-type:none">
+<li class="heading6" id="i1.5.1.1.4.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.5.1.1.4.1" href="situacao_tributaria.html" target="hmcontent"><span class="heading6" id="s1.5.1.1.4.1">Situacao Tributaria</span></a>
+</li>
+</ul>
+</li>
+<li class="heading5" id="i1.5.1.1.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.5.1.1.5" href="sped.html" target="hmcontent"><span class="heading5" id="s1.5.1.1.5">SPED</span></a>
+</li>
+<li class="heading5" id="i1.5.1.1.6" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.5.1.1.6" href="lotesegrades.html" target="hmcontent"><span class="heading5" id="s1.5.1.1.6" ondblclick="return dblclicked(this)">LOTES e GRADES</span></a>
+<ul id="ul1.5.1.1.6" style="list-style-type:none">
+<li class="heading6" id="i1.5.1.1.6.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.5.1.1.6.1" href="produto_com_fabricacao_propria.html" target="hmcontent"><span class="heading6" id="s1.5.1.1.6.1">Produto com Fabricação Propria</span></a>
+</li>
+<li class="heading6" id="i1.5.1.1.6.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.5.1.1.6.2" href="produto_com_kit.html" target="hmcontent"><span class="heading6" id="s1.5.1.1.6.2">Produto com Kit</span></a>
+</li>
+<li class="heading6" id="i1.5.1.1.6.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.5.1.1.6.3" href="produto_com_lolte.html" target="hmcontent"><span class="heading6" id="s1.5.1.1.6.3">Produto com Lote</span></a>
+</li>
+<li class="heading6" id="i1.5.1.1.6.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.5.1.1.6.4" href="produto_com_grade.html" target="hmcontent"><span class="heading6" id="s1.5.1.1.6.4">Produto com Grade</span></a>
+</li>
+<li class="heading6" id="i1.5.1.1.6.5" style="background:url(cicon2.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.5.1.1.6.5" href="medicamento.html" target="hmcontent"><span class="heading6" id="s1.5.1.1.6.5">Medicamento</span></a>
+</li>
+<li class="heading6" id="i1.5.1.1.6.6" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.5.1.1.6.6" href="medicamentos2.html" target="hmcontent"><span class="heading6" id="s1.5.1.1.6.6">Medicamentos</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i1.5.1.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.5.1.2" href="cadastro_de_clientes_fornecedo.html" target="hmcontent"><span class="heading4" id="s1.5.1.2" ondblclick="return dblclicked(this)">Cadastro de Clientes/Fornecedor</span></a>
+<ul id="ul1.5.1.2" style="list-style-type:none">
+<li class="heading5" id="i1.5.1.2.1" style="background:url(cicon2.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.5.1.2.1" href="cadastro_cliente.html" target="hmcontent"><span class="heading5" id="s1.5.1.2.1">Cadastro Cliente</span></a>
+</li>
+<li class="heading5" id="i1.5.1.2.2" style="background:url(cicon2.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.5.1.2.2" href="local_de_entrega.html" target="hmcontent"><span class="heading5" id="s1.5.1.2.2">Local de Entrega</span></a>
+</li>
+<li class="heading5" id="i1.5.1.2.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.5.1.2.3" href="local_de_entrega2.html" target="hmcontent"><span class="heading5" id="s1.5.1.2.3">Local de Entrega</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i1.5.1.3" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.5.1.3" href="cadastro_transportadora.html" target="hmcontent"><span class="heading4" id="s1.5.1.3" ondblclick="return dblclicked(this)">Cadastro Transportadora</span></a>
+<ul id="ul1.5.1.3" style="list-style-type:none">
+<li class="heading5" id="i1.5.1.3.1" style="background:url(cicon2.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.5.1.3.1" href="transportadora.html" target="hmcontent"><span class="heading5" id="s1.5.1.3.1">Transportadora</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i1.6" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.6" href="modulo_financeiro.html" target="hmcontent"><span class="heading2" id="s1.6" ondblclick="return dblclicked(this)">Módulo Financeiro</span></a>
+<ul id="ul1.6" style="list-style-type:none">
+<li class="heading3" id="i1.6.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.6.1" href="processo_de_controle_financeir.html" target="hmcontent"><span class="heading3" id="s1.6.1">Processo de Controle Financeiro</span></a>
+</li>
+<li class="heading3" id="i1.6.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.6.2" href="consulta_relatorios3.html" target="hmcontent"><span class="heading3" id="s1.6.2">Consulta Relatórios</span></a>
+</li>
+<li class="heading3" id="i1.6.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.6.3" href="exercicios_propostos_-_finance.html" target="hmcontent"><span class="heading3" id="s1.6.3">Exercícios Propostos - Financeiro</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i1.7" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.7" href="modulo_compras.html" target="hmcontent"><span class="heading2" id="s1.7" ondblclick="return dblclicked(this)">Módulo Compras</span></a>
+<ul id="ul1.7" style="list-style-type:none">
+<li class="heading3" id="i1.7.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.7.1" href="cotacao.html" target="hmcontent"><span class="heading3" id="s1.7.1" ondblclick="return dblclicked(this)">Cotação</span></a>
+<ul id="ul1.7.1" style="list-style-type:none">
+<li class="heading4" id="i1.7.1.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.7.1.1" href="cotacao_parametrizacao.html" target="hmcontent"><span class="heading4" id="s1.7.1.1">Cotação Parametrização</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i1.7.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.7.2" href="processo_de_compras_hc.html" target="hmcontent"><span class="heading3" id="s1.7.2">Processo de Compras HC</span></a>
+</li>
+<li class="heading3" id="i1.7.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.7.3" href="consulta_relatorios.html" target="hmcontent"><span class="heading3" id="s1.7.3">Consulta Relatórios</span></a>
+</li>
+<li class="heading3" id="i1.7.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.7.4" href="exercicios_propostos_-_compras.html" target="hmcontent"><span class="heading3" id="s1.7.4">Exercicios Propostos - Compras</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i1.8" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.8" href="modulo_vendas.html" target="hmcontent"><span class="heading2" id="s1.8" ondblclick="return dblclicked(this)">Módulo Vendas</span></a>
+<ul id="ul1.8" style="list-style-type:none">
+<li class="heading3" id="i1.8.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.8.1" href="nf_e_2g.html" target="hmcontent"><span class="heading3" id="s1.8.1" ondblclick="return dblclicked(this)">NF_e 2G - Nota Fiscal Eletrônica</span></a>
+<ul id="ul1.8.1" style="list-style-type:none">
+<li class="heading4" id="i1.8.1.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.8.1.1" href="tipos_de_entrada___saida.html" target="hmcontent"><span class="heading4" id="s1.8.1.1" ondblclick="return dblclicked(this)">Tipos de Entrada / saida</span></a>
+<ul id="ul1.8.1.1" style="list-style-type:none">
+<li class="heading5" id="i1.8.1.1.1" style="background:url(cicon2.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.8.1.1.1" href="identificacao_da_nf-e_2g.html" target="hmcontent"><span class="heading5" id="s1.8.1.1.1">Terminal de Vendas NF-e 2G</span></a>
+</li>
+<li class="heading5" id="i1.8.1.1.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.8.1.1.2" href="consignacao.html" target="hmcontent"><span class="heading5" id="s1.8.1.1.2">Consignação</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i1.8.1.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.8.1.2" href="procedimentosinstalacaonf-e2g.html" target="hmcontent"><span class="heading4" id="s1.8.1.2" ondblclick="return dblclicked(this)">Procedimentos Instalação NF-e 2G 2</span></a>
+<ul id="ul1.8.1.2" style="list-style-type:none">
+<li class="heading5" id="i1.8.1.2.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.8.1.2.1" href="instalcao_framework.html" target="hmcontent"><span class="heading5" id="s1.8.1.2.1" ondblclick="return dblclicked(this)">Framework</span></a>
+<ul id="ul1.8.1.2.1" style="list-style-type:none">
+<li class="heading6" id="i1.8.1.2.1.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.8.1.2.1.1" href="remocao_framework.html" target="hmcontent"><span class="heading6" id="s1.8.1.2.1.1">Remoçao Framework</span></a>
+</li>
+</ul>
+</li>
+<li class="heading5" id="i1.8.1.2.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.8.1.2.2" href="certificados.html" target="hmcontent"><span class="heading5" id="s1.8.1.2.2" ondblclick="return dblclicked(this)">Certificados</span></a>
+<ul id="ul1.8.1.2.2" style="list-style-type:none">
+<li class="heading6" id="i1.8.1.2.2.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.8.1.2.2.1" href="instalacao_certificado.html" target="hmcontent"><span class="heading6" id="s1.8.1.2.2.1" ondblclick="return dblclicked(this)">Instalação Certificado</span></a>
+<ul id="ul1.8.1.2.2.1" style="list-style-type:none">
+<li class="heading6" id="i1.8.1.2.2.1.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.8.1.2.2.1.1" href="certificado_por_email.html" target="hmcontent"><span class="heading6" id="s1.8.1.2.2.1.1">Certificado por email</span></a>
+</li>
+<li class="heading6" id="i1.8.1.2.2.1.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.8.1.2.2.1.2" href="certificado_a3.html" target="hmcontent"><span class="heading6" id="s1.8.1.2.2.1.2">Certificado A3</span></a>
+</li>
+</ul>
+</li>
+<li class="heading6" id="i1.8.1.2.2.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.8.1.2.2.2" href="configura_active_x.html" target="hmcontent"><span class="heading6" id="s1.8.1.2.2.2">Configura Active X</span></a>
+</li>
+<li class="heading6" id="i1.8.1.2.2.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.8.1.2.2.3" href="cadeia_do_ws.html" target="hmcontent"><span class="heading6" id="s1.8.1.2.2.3">Cadeia do WS</span></a>
+</li>
+<li class="heading6" id="i1.8.1.2.2.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.8.1.2.2.4" href="dll_capicom.html" target="hmcontent"><span class="heading6" id="s1.8.1.2.2.4">DLL Capicom</span></a>
+</li>
+</ul>
+</li>
+<li class="heading5" id="i1.8.1.2.3" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.8.1.2.3" href="instalacaonfe.html" target="hmcontent"><span class="heading5" id="s1.8.1.2.3" ondblclick="return dblclicked(this)">Instalação NFe</span></a>
+<ul id="ul1.8.1.2.3" style="list-style-type:none">
+<li class="heading6" id="i1.8.1.2.3.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.8.1.2.3.1" href="configuracoesnfehc.html" target="hmcontent"><span class="heading6" id="s1.8.1.2.3.1">Arquivo Conttroller_NF-e</span></a>
+</li>
+<li class="heading6" id="i1.8.1.2.3.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.8.1.2.3.2" href="estruturaepastas.html" target="hmcontent"><span class="heading6" id="s1.8.1.2.3.2" ondblclick="return dblclicked(this)">Estrutura e Pastas</span></a>
+<ul id="ul1.8.1.2.3.2" style="list-style-type:none">
+<li class="heading6" id="i1.8.1.2.3.2.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.8.1.2.3.2.1" href="atualizarnf-e.html" target="hmcontent"><span class="heading6" id="s1.8.1.2.3.2.1">Atualizar NFe 1.0 para 2.0</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i1.8.1.3" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.8.1.3" href="rotinas_de_manutencao.html" target="hmcontent"><span class="heading4" id="s1.8.1.3" ondblclick="return dblclicked(this)">Rotinas de Manutenção</span></a>
+<ul id="ul1.8.1.3" style="list-style-type:none">
+<li class="heading5" id="i1.8.1.3.1" style="background:url(cicon11.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.8.1.3.1" href="atualizandostatushcegestor.html" target="hmcontent"><span class="heading5" id="s1.8.1.3.1">Atualizando Status HC e Gestor</span></a>
+</li>
+<li class="heading5" id="i1.8.1.3.2" style="background:url(cicon11.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.8.1.3.2" href="corrigidovisualizacaododanfe.html" target="hmcontent"><span class="heading5" id="s1.8.1.3.2">Corrigindo Visualização do DANFE</span></a>
+</li>
+<li class="heading5" id="i1.8.1.3.3" style="background:url(cicon11.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.8.1.3.3" href="exclucao_log_.html" target="hmcontent"><span class="heading5" id="s1.8.1.3.3">Exclusão Log Duplicados&nbsp;</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i1.8.1.4" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.8.1.4" href="reenviar_e-mail_.html" target="hmcontent"><span class="heading4" id="s1.8.1.4" ondblclick="return dblclicked(this)">Reenviar E-mail Individual</span></a>
+<ul id="ul1.8.1.4" style="list-style-type:none">
+<li class="heading5" id="i1.8.1.4.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.8.1.4.1" href="reenviar_e-mail_por_lote.html" target="hmcontent"><span class="heading5" id="s1.8.1.4.1">Reenviar E-mail por lote</span></a>
+</li>
+<li class="heading5" id="i1.8.1.4.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.8.1.4.2" href="servidor_smtp.html" target="hmcontent"><span class="heading5" id="s1.8.1.4.2">Servidor SMTP</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i1.8.1.5" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.8.1.5" href="contigencia.html" target="hmcontent"><span class="heading4" id="s1.8.1.5" ondblclick="return dblclicked(this)">Contingência</span></a>
+<ul id="ul1.8.1.5" style="list-style-type:none">
+<li class="heading5" id="i1.8.1.5.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.8.1.5.1" href="contigencia_depc.html" target="hmcontent"><span class="heading5" id="s1.8.1.5.1">Contingência DEPC</span></a>
+</li>
+<li class="heading5" id="i1.8.1.5.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.8.1.5.2" href="contigencia_scan.html" target="hmcontent"><span class="heading5" id="s1.8.1.5.2" ondblclick="return dblclicked(this)">Contingência SCAN</span></a>
+<ul id="ul1.8.1.5.2" style="list-style-type:none">
+<li class="heading6" id="i1.8.1.5.2.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.8.1.5.2.1" href="emisao_scan.html" target="hmcontent"><span class="heading6" id="s1.8.1.5.2.1">Emissão SCAN</span></a>
+</li>
+</ul>
+</li>
+<li class="heading5" id="i1.8.1.5.3" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.8.1.5.3" href="contigencia_fs-da.html" target="hmcontent"><span class="heading5" id="s1.8.1.5.3" ondblclick="return dblclicked(this)">Contingência FS-DA</span></a>
+<ul id="ul1.8.1.5.3" style="list-style-type:none">
+<li class="heading6" id="i1.8.1.5.3.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.8.1.5.3.1" href="formularios_de_seguranca.html" target="hmcontent"><span class="heading6" id="s1.8.1.5.3.1">Formulários de Segurança</span></a>
+</li>
+<li class="heading6" id="i1.8.1.5.3.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.8.1.5.3.2" href="transmissao_das_nf-e_emitidas_.html" target="hmcontent"><span class="heading6" id="s1.8.1.5.3.2" ondblclick="return dblclicked(this)">Transmissão das NF-e emitidas em Contingência</span></a>
+<ul id="ul1.8.1.5.3.2" style="list-style-type:none">
+<li class="heading6" id="i1.8.1.5.3.2.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.8.1.5.3.2.1" href="rejeicao_nf-e_emitidas_em_cont.html" target="hmcontent"><span class="heading6" id="s1.8.1.5.3.2.1">Rejeição NF-e emitidas em Contingência</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i1.8.1.6" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.8.1.6" href="cancelamento_de_nfe.html" target="hmcontent"><span class="heading4" id="s1.8.1.6" ondblclick="return dblclicked(this)">Cancelamento, Denegação, Inutilização e CCe</span></a>
+<ul id="ul1.8.1.6" style="list-style-type:none">
+<li class="heading5" id="i1.8.1.6.1" style="background:url(cicon11.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.8.1.6.1" href="carta_de_correcao.html" target="hmcontent"><span class="heading5" id="s1.8.1.6.1">Carta de Correção (CCe)</span></a>
+</li>
+<li class="heading5" id="i1.8.1.6.2" style="background:url(cicon11.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.8.1.6.2" href="denegada.html" target="hmcontent"><span class="heading5" id="s1.8.1.6.2">Denegada</span></a>
+</li>
+<li class="heading5" id="i1.8.1.6.3" style="background:url(cicon11.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.8.1.6.3" href="cancelar.html" target="hmcontent"><span class="heading5" id="s1.8.1.6.3">Cancelar</span></a>
+</li>
+<li class="heading5" id="i1.8.1.6.4" style="background:url(cicon11.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.8.1.6.4" href="inutilizacao.html" target="hmcontent"><span class="heading5" id="s1.8.1.6.4">Inutilização</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i1.8.1.7" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.8.1.7" href="complementar.html" target="hmcontent"><span class="heading4" id="s1.8.1.7" ondblclick="return dblclicked(this)">Complementar Imposto</span></a>
+<ul id="ul1.8.1.7" style="list-style-type:none">
+<li class="heading5" id="i1.8.1.7.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.8.1.7.1" href="complementar_cadastro_tipo.html" target="hmcontent"><span class="heading5" id="s1.8.1.7.1">Complementar Cadastro Tipo</span></a>
+</li>
+<li class="heading5" id="i1.8.1.7.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.8.1.7.2" href="complementar_imposto_destacado.html" target="hmcontent"><span class="heading5" id="s1.8.1.7.2" ondblclick="return dblclicked(this)">Complementar IMPOSTO DESTACADO A MENOR</span></a>
+<ul id="ul1.8.1.7.2" style="list-style-type:none">
+<li class="heading6" id="i1.8.1.7.2.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.8.1.7.2.1" href="complementar_regras.html" target="hmcontent"><span class="heading6" id="s1.8.1.7.2.1">Complemento ICMS</span></a>
+</li>
+<li class="heading6" id="i1.8.1.7.2.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.8.1.7.2.2" href="complementar_preenchimento.html" target="hmcontent"><span class="heading6" id="s1.8.1.7.2.2">Complementar Preenchimento</span></a>
+</li>
+</ul>
+</li>
+<li class="heading5" id="i1.8.1.7.3" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.8.1.7.3" href="complementar_imposto_destacad2.html" target="hmcontent"><span class="heading5" id="s1.8.1.7.3" ondblclick="return dblclicked(this)">Complementar IMPOSTO DESTACADO A MAIOR</span></a>
+<ul id="ul1.8.1.7.3" style="list-style-type:none">
+<li class="heading6" id="i1.8.1.7.3.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.8.1.7.3.1" href="modelos_de_declaracao.html" target="hmcontent"><span class="heading6" id="s1.8.1.7.3.1" ondblclick="return dblclicked(this)">Modelos de Declaração</span></a>
+<ul id="ul1.8.1.7.3.1" style="list-style-type:none">
+<li class="heading6" id="i1.8.1.7.3.1.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.8.1.7.3.1.1" href="declaracao_de_icms.html" target="hmcontent"><span class="heading6" id="s1.8.1.7.3.1.1">DECLARAÇÃO DE ICMS</span></a>
+</li>
+<li class="heading6" id="i1.8.1.7.3.1.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.8.1.7.3.1.2" href="declaracao_de_ipi.html" target="hmcontent"><span class="heading6" id="s1.8.1.7.3.1.2">DECLARAÇÃO DE IPI</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i1.8.1.8" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.8.1.8" href="calculo_nfe_importacao.html" target="hmcontent"><span class="heading4" id="s1.8.1.8" ondblclick="return dblclicked(this)">Calculo NFe Importação</span></a>
+<ul id="ul1.8.1.8" style="list-style-type:none">
+<li class="heading5" id="i1.8.1.8.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.8.1.8.1" href="nf_importacao.html" target="hmcontent"><span class="heading5" id="s1.8.1.8.1" ondblclick="return dblclicked(this)">NF Importação</span></a>
+<ul id="ul1.8.1.8.1" style="list-style-type:none">
+<li class="heading6" id="i1.8.1.8.1.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.8.1.8.1.1" href="di.html" target="hmcontent"><span class="heading6" id="s1.8.1.8.1.1">DI</span></a>
+</li>
+</ul>
+</li>
+<li class="heading5" id="i1.8.1.8.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.8.1.8.2" href="planinha_com_calculo_nfe_impor.html" target="hmcontent"><span class="heading5" id="s1.8.1.8.2">Planilha com Calculo NFe Importação</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i1.8.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.8.2" href="instalacao_ecf.html" target="hmcontent"><span class="heading3" id="s1.8.2" ondblclick="return dblclicked(this)">Instalação ECF</span></a>
+<ul id="ul1.8.2" style="list-style-type:none">
+<li class="heading4" id="i1.8.2.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.8.2.1" href="parametros_usuarios.html" target="hmcontent"><span class="heading4" id="s1.8.2.1">Parametros Usuarios</span></a>
+</li>
+<li class="heading4" id="i1.8.2.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.8.2.2" href="geracao_arquivos_tef.html" target="hmcontent"><span class="heading4" id="s1.8.2.2">Geração Arquivos TEF</span></a>
+</li>
+<li class="heading4" id="i1.8.2.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.8.2.3" href="geracao_arquivos_paf.html" target="hmcontent"><span class="heading4" id="s1.8.2.3">Geração Arquivos DAT</span></a>
+</li>
+<li class="heading4" id="i1.8.2.4" style="background:url(cicon2.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.8.2.4" href="cadastros_de_moedas2.html" target="hmcontent"><span class="heading4" id="s1.8.2.4">Cadastros de Moedas</span></a>
+</li>
+<li class="heading4" id="i1.8.2.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.8.2.5" href="cadastros_modelos.html" target="hmcontent"><span class="heading4" id="s1.8.2.5">Cadastros Modelos</span></a>
+</li>
+<li class="heading4" id="i1.8.2.6" style="background:url(cicon2.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.8.2.6" href="paf_ecf.html" target="hmcontent"><span class="heading4" id="s1.8.2.6">Configurar Tipos Entrada/Saida</span></a>
+</li>
+<li class="heading4" id="i1.8.2.7" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.8.2.7" href="modelo_daruma.html" target="hmcontent"><span class="heading4" id="s1.8.2.7" ondblclick="return dblclicked(this)">Modelo Daruma</span></a>
+<ul id="ul1.8.2.7" style="list-style-type:none">
+<li class="heading5" id="i1.8.2.7.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.8.2.7.1" href="daruma_framework.html" target="hmcontent"><span class="heading5" id="s1.8.2.7.1">Daruma Framework</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i1.8.2.8" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.8.2.8" href="modelo_bematech.html" target="hmcontent"><span class="heading4" id="s1.8.2.8">Modelo Bematech</span></a>
+</li>
+<li class="heading4" id="i1.8.2.9" style="background:url(cicon2.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.8.2.9" href="modelo_epson.html" target="hmcontent"><span class="heading4" id="s1.8.2.9">Modelo Epson</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i1.8.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.8.3" href="processo_de_faturamento_hc.html" target="hmcontent"><span class="heading3" id="s1.8.3">Processo de Faturamento HC</span></a>
+</li>
+<li class="heading3" id="i1.8.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.8.4" href="consulta_relatorios2.html" target="hmcontent"><span class="heading3" id="s1.8.4">Consulta Relatórios</span></a>
+</li>
+<li class="heading3" id="i1.8.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.8.5" href="exercicios_propostos_-_faturam.html" target="hmcontent"><span class="heading3" id="s1.8.5">Exercícios Propostos - Faturamento</span></a>
+</li>
+<li class="heading3" id="i1.8.6" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.8.6" href="alterar_lote_grade.html" target="hmcontent"><span class="heading3" id="s1.8.6">Alterar Lote/Grade</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i1.9" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.9" href="modulo_bancario.html" target="hmcontent"><span class="heading2" id="s1.9" ondblclick="return dblclicked(this)">Módulo Bancario</span></a>
+<ul id="ul1.9" style="list-style-type:none">
+<li class="heading3" id="i1.9.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.9.1" href="visao_geral_de_todos_os_cadast_3.html" target="hmcontent"><span class="heading3" id="s1.9.1" ondblclick="return dblclicked(this)">Visão Geral de todos os Cadastros_3</span></a>
+<ul id="ul1.9.1" style="list-style-type:none">
+<li class="heading4" id="i1.9.1.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.9.1.1" href="cadastros_modelos_3.html" target="hmcontent"><span class="heading4" id="s1.9.1.1" ondblclick="return dblclicked(this)">Cadastros Modelos_3</span></a>
+<ul id="ul1.9.1.1" style="list-style-type:none">
+<li class="heading5" id="i1.9.1.1.1" style="background:url(cicon2.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.9.1.1.1" href="paf_ecf_3.html" target="hmcontent"><span class="heading5" id="s1.9.1.1.1">Configurar Tipos Entrada/Saida_3</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i1.9.1.2" style="background:url(cicon2.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.9.1.2" href="cadastros_de_moedas2_3.html" target="hmcontent"><span class="heading4" id="s1.9.1.2">Cadastros de Moedas_3</span></a>
+</li>
+<li class="heading4" id="i1.9.1.3" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.9.1.3" href="cadastro_transportadora_3.html" target="hmcontent"><span class="heading4" id="s1.9.1.3" ondblclick="return dblclicked(this)">Cadastro Transportadora_3</span></a>
+<ul id="ul1.9.1.3" style="list-style-type:none">
+<li class="heading5" id="i1.9.1.3.1" style="background:url(cicon2.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.9.1.3.1" href="transportadora_4.html" target="hmcontent"><span class="heading5" id="s1.9.1.3.1">Transportadora_4</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i1.9.1.4" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.9.1.4" href="cadastro_de_clientes_fornecedo_3.html" target="hmcontent"><span class="heading4" id="s1.9.1.4" ondblclick="return dblclicked(this)">Cadastro de Clientes/Fornecedor_3</span></a>
+<ul id="ul1.9.1.4" style="list-style-type:none">
+<li class="heading5" id="i1.9.1.4.1" style="background:url(cicon2.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.9.1.4.1" href="cadastro_cliente_3.html" target="hmcontent"><span class="heading5" id="s1.9.1.4.1">Cadastro Cliente_3</span></a>
+</li>
+<li class="heading5" id="i1.9.1.4.2" style="background:url(cicon2.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.9.1.4.2" href="local_de_entrega_3.html" target="hmcontent"><span class="heading5" id="s1.9.1.4.2">Local de Entrega_3</span></a>
+</li>
+<li class="heading5" id="i1.9.1.4.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.9.1.4.3" href="local_de_entrega2_3.html" target="hmcontent"><span class="heading5" id="s1.9.1.4.3">Local de Entrega_3</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i1.9.1.5" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.9.1.5" href="cadastro_de_produtos_3.html" target="hmcontent"><span class="heading4" id="s1.9.1.5" ondblclick="return dblclicked(this)">Cadastro de Produtos_3</span></a>
+<ul id="ul1.9.1.5" style="list-style-type:none">
+<li class="heading5" id="i1.9.1.5.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.9.1.5.1" href="cadastro_produtos_3.html" target="hmcontent"><span class="heading5" id="s1.9.1.5.1" ondblclick="return dblclicked(this)">Cadastro Produtos_3</span></a>
+<ul id="ul1.9.1.5.1" style="list-style-type:none">
+<li class="heading6" id="i1.9.1.5.1.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.9.1.5.1.1" href="cadastro_produtos2_3.html" target="hmcontent"><span class="heading6" id="s1.9.1.5.1.1">Cadastro Produtos_3</span></a>
+</li>
+</ul>
+</li>
+<li class="heading5" id="i1.9.1.5.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.9.1.5.2" href="ncm_3.html" target="hmcontent"><span class="heading5" id="s1.9.1.5.2">NCM_3</span></a>
+</li>
+<li class="heading5" id="i1.9.1.5.3" style="background:url(cicon11.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.9.1.5.3" href="produtonotafiscaleletronica_3.html" target="hmcontent"><span class="heading5" id="s1.9.1.5.3">Nota Fiscal Eletronica_3</span></a>
+</li>
+<li class="heading5" id="i1.9.1.5.4" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.9.1.5.4" href="imposto_importacao_3.html" target="hmcontent"><span class="heading5" id="s1.9.1.5.4" ondblclick="return dblclicked(this)">Imposto Importação_3</span></a>
+<ul id="ul1.9.1.5.4" style="list-style-type:none">
+<li class="heading6" id="i1.9.1.5.4.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.9.1.5.4.1" href="situacao_tributaria_3.html" target="hmcontent"><span class="heading6" id="s1.9.1.5.4.1">Situacao Tributaria_3</span></a>
+</li>
+</ul>
+</li>
+<li class="heading5" id="i1.9.1.5.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.9.1.5.5" href="sped_4.html" target="hmcontent"><span class="heading5" id="s1.9.1.5.5">SPED_4</span></a>
+</li>
+<li class="heading5" id="i1.9.1.5.6" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.9.1.5.6" href="lotesegrades_3.html" target="hmcontent"><span class="heading5" id="s1.9.1.5.6" ondblclick="return dblclicked(this)">LOTES e GRADES_3</span></a>
+<ul id="ul1.9.1.5.6" style="list-style-type:none">
+<li class="heading6" id="i1.9.1.5.6.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.9.1.5.6.1" href="produto_com_fabricacao_propria_3.html" target="hmcontent"><span class="heading6" id="s1.9.1.5.6.1">Produto com Fabricação Propria_3</span></a>
+</li>
+<li class="heading6" id="i1.9.1.5.6.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.9.1.5.6.2" href="produto_com_kit_3.html" target="hmcontent"><span class="heading6" id="s1.9.1.5.6.2">Produto com Kit_3</span></a>
+</li>
+<li class="heading6" id="i1.9.1.5.6.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.9.1.5.6.3" href="produto_com_lolte_3.html" target="hmcontent"><span class="heading6" id="s1.9.1.5.6.3">Produto com Lote_3</span></a>
+</li>
+<li class="heading6" id="i1.9.1.5.6.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.9.1.5.6.4" href="produto_com_grade_3.html" target="hmcontent"><span class="heading6" id="s1.9.1.5.6.4">Produto com Grade_3</span></a>
+</li>
+<li class="heading6" id="i1.9.1.5.6.5" style="background:url(cicon2.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.9.1.5.6.5" href="medicamento_3.html" target="hmcontent"><span class="heading6" id="s1.9.1.5.6.5">Medicamento_3</span></a>
+</li>
+<li class="heading6" id="i1.9.1.5.6.6" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.9.1.5.6.6" href="medicamentos2_3.html" target="hmcontent"><span class="heading6" id="s1.9.1.5.6.6">Medicamentos_3</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i1.10" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.10" href="modulo_relatorios.html" target="hmcontent"><span class="heading2" id="s1.10" ondblclick="return dblclicked(this)">Módulo Relatórios</span></a>
+<ul id="ul1.10" style="list-style-type:none">
+<li class="heading3" id="i1.10.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.10.1" href="visao_geral_de_todos_os_cadast_2.html" target="hmcontent"><span class="heading3" id="s1.10.1" ondblclick="return dblclicked(this)">Visão Geral de todos os Cadastros_2</span></a>
+<ul id="ul1.10.1" style="list-style-type:none">
+<li class="heading4" id="i1.10.1.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.10.1.1" href="cadastros_modelos_2.html" target="hmcontent"><span class="heading4" id="s1.10.1.1" ondblclick="return dblclicked(this)">Cadastros Modelos_2</span></a>
+<ul id="ul1.10.1.1" style="list-style-type:none">
+<li class="heading5" id="i1.10.1.1.1" style="background:url(cicon2.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.10.1.1.1" href="paf_ecf_2.html" target="hmcontent"><span class="heading5" id="s1.10.1.1.1">Configurar Tipos Entrada/Saida_2</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i1.10.1.2" style="background:url(cicon2.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.10.1.2" href="cadastros_de_moedas2_2.html" target="hmcontent"><span class="heading4" id="s1.10.1.2">Cadastros de Moedas_2</span></a>
+</li>
+<li class="heading4" id="i1.10.1.3" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.10.1.3" href="cadastro_transportadora_2.html" target="hmcontent"><span class="heading4" id="s1.10.1.3" ondblclick="return dblclicked(this)">Cadastro Transportadora_2</span></a>
+<ul id="ul1.10.1.3" style="list-style-type:none">
+<li class="heading5" id="i1.10.1.3.1" style="background:url(cicon2.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.10.1.3.1" href="transportadora_3.html" target="hmcontent"><span class="heading5" id="s1.10.1.3.1">Transportadora_3</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i1.10.1.4" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.10.1.4" href="cadastro_de_clientes_fornecedo_2.html" target="hmcontent"><span class="heading4" id="s1.10.1.4" ondblclick="return dblclicked(this)">Cadastro de Clientes/Fornecedor_2</span></a>
+<ul id="ul1.10.1.4" style="list-style-type:none">
+<li class="heading5" id="i1.10.1.4.1" style="background:url(cicon2.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.10.1.4.1" href="cadastro_cliente_2.html" target="hmcontent"><span class="heading5" id="s1.10.1.4.1">Cadastro Cliente_2</span></a>
+</li>
+<li class="heading5" id="i1.10.1.4.2" style="background:url(cicon2.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.10.1.4.2" href="local_de_entrega_2.html" target="hmcontent"><span class="heading5" id="s1.10.1.4.2">Local de Entrega_2</span></a>
+</li>
+<li class="heading5" id="i1.10.1.4.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.10.1.4.3" href="local_de_entrega2_2.html" target="hmcontent"><span class="heading5" id="s1.10.1.4.3">Local de Entrega_2</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i1.10.1.5" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.10.1.5" href="cadastro_de_produtos_2.html" target="hmcontent"><span class="heading4" id="s1.10.1.5" ondblclick="return dblclicked(this)">Cadastro de Produtos_2</span></a>
+<ul id="ul1.10.1.5" style="list-style-type:none">
+<li class="heading5" id="i1.10.1.5.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.10.1.5.1" href="cadastro_produtos_2.html" target="hmcontent"><span class="heading5" id="s1.10.1.5.1" ondblclick="return dblclicked(this)">Cadastro Produtos_2</span></a>
+<ul id="ul1.10.1.5.1" style="list-style-type:none">
+<li class="heading6" id="i1.10.1.5.1.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.10.1.5.1.1" href="cadastro_produtos2_2.html" target="hmcontent"><span class="heading6" id="s1.10.1.5.1.1">Cadastro Produtos_2</span></a>
+</li>
+</ul>
+</li>
+<li class="heading5" id="i1.10.1.5.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.10.1.5.2" href="ncm_2.html" target="hmcontent"><span class="heading5" id="s1.10.1.5.2">NCM_2</span></a>
+</li>
+<li class="heading5" id="i1.10.1.5.3" style="background:url(cicon11.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.10.1.5.3" href="produtonotafiscaleletronica_2.html" target="hmcontent"><span class="heading5" id="s1.10.1.5.3">Nota Fiscal Eletronica_2</span></a>
+</li>
+<li class="heading5" id="i1.10.1.5.4" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.10.1.5.4" href="imposto_importacao_2.html" target="hmcontent"><span class="heading5" id="s1.10.1.5.4" ondblclick="return dblclicked(this)">Imposto Importação_2</span></a>
+<ul id="ul1.10.1.5.4" style="list-style-type:none">
+<li class="heading6" id="i1.10.1.5.4.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.10.1.5.4.1" href="situacao_tributaria_2.html" target="hmcontent"><span class="heading6" id="s1.10.1.5.4.1">Situacao Tributaria_2</span></a>
+</li>
+</ul>
+</li>
+<li class="heading5" id="i1.10.1.5.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.10.1.5.5" href="sped_3.html" target="hmcontent"><span class="heading5" id="s1.10.1.5.5">SPED_3</span></a>
+</li>
+<li class="heading5" id="i1.10.1.5.6" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.10.1.5.6" href="lotesegrades_2.html" target="hmcontent"><span class="heading5" id="s1.10.1.5.6" ondblclick="return dblclicked(this)">LOTES e GRADES_2</span></a>
+<ul id="ul1.10.1.5.6" style="list-style-type:none">
+<li class="heading6" id="i1.10.1.5.6.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.10.1.5.6.1" href="produto_com_fabricacao_propria_2.html" target="hmcontent"><span class="heading6" id="s1.10.1.5.6.1">Produto com Fabricação Propria_2</span></a>
+</li>
+<li class="heading6" id="i1.10.1.5.6.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.10.1.5.6.2" href="produto_com_kit_2.html" target="hmcontent"><span class="heading6" id="s1.10.1.5.6.2">Produto com Kit_2</span></a>
+</li>
+<li class="heading6" id="i1.10.1.5.6.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.10.1.5.6.3" href="produto_com_lolte_2.html" target="hmcontent"><span class="heading6" id="s1.10.1.5.6.3">Produto com Lote_2</span></a>
+</li>
+<li class="heading6" id="i1.10.1.5.6.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.10.1.5.6.4" href="produto_com_grade_2.html" target="hmcontent"><span class="heading6" id="s1.10.1.5.6.4">Produto com Grade_2</span></a>
+</li>
+<li class="heading6" id="i1.10.1.5.6.5" style="background:url(cicon2.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.10.1.5.6.5" href="medicamento_2.html" target="hmcontent"><span class="heading6" id="s1.10.1.5.6.5">Medicamento_2</span></a>
+</li>
+<li class="heading6" id="i1.10.1.5.6.6" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.10.1.5.6.6" href="medicamentos2_2.html" target="hmcontent"><span class="heading6" id="s1.10.1.5.6.6">Medicamentos_2</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i1.11" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.11" href="modulo_diversos.html" target="hmcontent"><span class="heading2" id="s1.11" ondblclick="return dblclicked(this)">Módulo Diversos</span></a>
+<ul id="ul1.11" style="list-style-type:none">
+<li class="heading3" id="i1.11.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.11.1" href="integracao_contabil.html" target="hmcontent"><span class="heading3" id="s1.11.1">Integração Contabil</span></a>
+</li>
+<li class="heading3" id="i1.11.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.11.2" href="integracao_fiscal.html" target="hmcontent"><span class="heading3" id="s1.11.2">Integração Fiscal</span></a>
+</li>
+<li class="heading3" id="i1.11.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.11.3" href="exportar_relatorios.html" target="hmcontent"><span class="heading3" id="s1.11.3">Exportar Relatórios</span></a>
+</li>
+<li class="heading3" id="i1.11.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.11.4" href="backup___restore.html" target="hmcontent"><span class="heading3" id="s1.11.4">Backup / Restore</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i1.12" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.12" href="modulo_especiais.html" target="hmcontent"><span class="heading2" id="s1.12" ondblclick="return dblclicked(this)">Módulo Especiais</span></a>
+<ul id="ul1.12" style="list-style-type:none">
+<li class="heading3" id="i1.12.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.12.1" href="introduction_2.html" target="hmcontent"><span class="heading3" id="s1.12.1" ondblclick="return dblclicked(this)">Configuração para Fabricação Própria 2</span></a>
+<ul id="ul1.12.1" style="list-style-type:none">
+<li class="heading4" id="i1.12.1.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.12.1.1" href="second_topic.html" target="hmcontent"><span class="heading4" id="s1.12.1.1" ondblclick="return dblclicked(this)">Cadastro&gt;&gt; Tipos de Entrada/Saída</span></a>
+<ul id="ul1.12.1.1" style="list-style-type:none">
+<li class="heading5" id="i1.12.1.1.1" style="background:url(cicon11.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.12.1.1.1" href="nome_transferencia__saida.html" target="hmcontent"><span class="heading5" id="s1.12.1.1.1">Nome: Transferência – Saída</span></a>
+</li>
+<li class="heading5" id="i1.12.1.1.2" style="background:url(cicon11.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.12.1.1.2" href="new_topic2.html" target="hmcontent"><span class="heading5" id="s1.12.1.1.2">Nome: Transferência – Entrada</span></a>
+</li>
+<li class="heading5" id="i1.12.1.1.3" style="background:url(cicon11.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.12.1.1.3" href="new_topic4.html" target="hmcontent"><span class="heading5" id="s1.12.1.1.3">Nome: Ajuste</span></a>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i1.12.1.2" style="background:url(cicon2.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.12.1.2" href="new_topic5.html" target="hmcontent"><span class="heading4" id="s1.12.1.2">Parâmetro Estabelecimento&gt;&gt; Saída 2</span></a>
+</li>
+<li class="heading4" id="i1.12.1.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.12.1.3" href="new_topic6.html" target="hmcontent"><span class="heading4" id="s1.12.1.3">Cadastro do produto acabados</span></a>
+</li>
+<li class="heading4" id="i1.12.1.4" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.12.1.4" href="new_topic8.html" target="hmcontent"><span class="heading4" id="s1.12.1.4" ondblclick="return dblclicked(this)">Lançando a produção</span></a>
+<ul id="ul1.12.1.4" style="list-style-type:none">
+<li class="heading5" id="i1.12.1.4.1" style="background:url(cicon11.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.12.1.4.1" href="new_topic9.html" target="hmcontent"><span class="heading5" id="s1.12.1.4.1">Selecionar o TIPO</span></a>
+</li>
+<li class="heading5" id="i1.12.1.4.2" style="background:url(cicon11.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.12.1.4.2" href="new_topic10.html" target="hmcontent"><span class="heading5" id="s1.12.1.4.2">Preencher Dados Principal</span></a>
+</li>
+<li class="heading5" id="i1.12.1.4.3" style="background:url(cicon11.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.12.1.4.3" href="new_topic11.html" target="hmcontent"><span class="heading5" id="s1.12.1.4.3">Preencher Dados Impostos</span></a>
+</li>
+<li class="heading5" id="i1.12.1.4.4" style="background:url(cicon11.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.12.1.4.4" href="new_topic12.html" target="hmcontent"><span class="heading5" id="s1.12.1.4.4">Forma de Pagamento</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i1.12.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.12.2" href="recalculo_comissao.html" target="hmcontent"><span class="heading3" id="s1.12.2">Recalculo Comissão</span></a>
+</li>
+<li class="heading3" id="i1.12.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.12.3" href="configuracao_boleto_bancario.html" target="hmcontent"><span class="heading3" id="s1.12.3">Configuração Boleto Bancario</span></a>
+</li>
+<li class="heading3" id="i1.12.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.12.4" href="criacao_de_relatorios.html" target="hmcontent"><span class="heading3" id="s1.12.4">Criação de Relatórios</span></a>
+</li>
+<li class="heading3" id="i1.12.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.12.5" href="controle_paciente__medico_e_co.html" target="hmcontent"><span class="heading3" id="s1.12.5">Controle Paciente, Medico e Convenios</span></a>
+</li>
+<li class="heading3" id="i1.12.6" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.12.6" href="codigo_de_barras_lote_grade.html" target="hmcontent"><span class="heading3" id="s1.12.6">Codigo de Barras Lote/Grade</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i1.13" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a1.13" href="modulo_impostos.html" target="hmcontent"><span class="heading2" id="s1.13" ondblclick="return dblclicked(this)">Módulo Impostos</span></a>
+<ul id="ul1.13" style="list-style-type:none">
+<li class="heading3" id="i1.13.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.13.1" href="sped_2.html" target="hmcontent"><span class="heading3" id="s1.13.1" ondblclick="return dblclicked(this)">Sped 2</span></a>
+<ul id="ul1.13.1" style="list-style-type:none">
+<li class="heading4" id="i1.13.1.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.13.1.1" href="visita1.html" target="hmcontent"><span class="heading4" id="s1.13.1.1" ondblclick="return dblclicked(this)">Visita 1</span></a>
+<ul id="ul1.13.1.1" style="list-style-type:none">
+<li class="heading5" id="i1.13.1.1.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.13.1.1.1" href="cadastros.html" target="hmcontent"><span class="heading5" id="s1.13.1.1.1" ondblclick="return dblclicked(this)">Cadastros</span></a>
+<ul id="ul1.13.1.1.1" style="list-style-type:none">
+<li class="heading6" id="i1.13.1.1.1.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.13.1.1.1.1" href="clientesefornecedores.html" target="hmcontent"><span class="heading6" id="s1.13.1.1.1.1">Clientes e Fornecedores</span></a>
+</li>
+<li class="heading6" id="i1.13.1.1.1.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.13.1.1.1.2" href="produtos.html" target="hmcontent"><span class="heading6" id="s1.13.1.1.1.2">Produtos</span></a>
+</li>
+<li class="heading6" id="i1.13.1.1.1.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.13.1.1.1.3" href="cartoesdecrdito.html" target="hmcontent"><span class="heading6" id="s1.13.1.1.1.3">Cartoes de Crédito</span></a>
+</li>
+<li class="heading6" id="i1.13.1.1.1.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.13.1.1.1.4" href="transportadora_2.html" target="hmcontent"><span class="heading6" id="s1.13.1.1.1.4">Transportadora 2</span></a>
+</li>
+<li class="heading6" id="i1.13.1.1.1.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.13.1.1.1.5" href="usuario.html" target="hmcontent"><span class="heading6" id="s1.13.1.1.1.5">Usuario</span></a>
+</li>
+<li class="heading6" id="i1.13.1.1.1.6" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.13.1.1.1.6" href="contabilista.html" target="hmcontent"><span class="heading6" id="s1.13.1.1.1.6">Contabilista</span></a>
+</li>
+<li class="heading6" id="i1.13.1.1.1.7" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.13.1.1.1.7" href="estabelecimento1.html" target="hmcontent"><span class="heading6" id="s1.13.1.1.1.7">Estabelecimento</span></a>
+</li>
+</ul>
+</li>
+<li class="heading5" id="i1.13.1.1.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.13.1.1.2" href="parmetros.html" target="hmcontent"><span class="heading5" id="s1.13.1.1.2" ondblclick="return dblclicked(this)">Parâmetros</span></a>
+<ul id="ul1.13.1.1.2" style="list-style-type:none">
+<li class="heading6" id="i1.13.1.1.2.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.13.1.1.2.1" href="tiposdeentradaesada.html" target="hmcontent"><span class="heading6" id="s1.13.1.1.2.1">Tipos de Entrada e Saída</span></a>
+</li>
+<li class="heading6" id="i1.13.1.1.2.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.13.1.1.2.2" href="estao.html" target="hmcontent"><span class="heading6" id="s1.13.1.1.2.2">Estação</span></a>
+</li>
+<li class="heading6" id="i1.13.1.1.2.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.13.1.1.2.3" href="usurios.html" target="hmcontent"><span class="heading6" id="s1.13.1.1.2.3">Usuários</span></a>
+</li>
+<li class="heading6" id="i1.13.1.1.2.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading6" id="a1.13.1.1.2.4" href="estabelecimento_2.html" target="hmcontent"><span class="heading6" id="s1.13.1.1.2.4">Estabelecimento 2</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading4" id="i1.13.1.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.13.1.2" href="napratica.html" target="hmcontent"><span class="heading4" id="s1.13.1.2">Na Pratica</span></a>
+</li>
+<li class="heading4" id="i1.13.1.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.13.1.3" href="objetivo.html" target="hmcontent"><span class="heading4" id="s1.13.1.3">Objetivo</span></a>
+</li>
+<li class="heading4" id="i1.13.1.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.13.1.4" href="introduo.html" target="hmcontent"><span class="heading4" id="s1.13.1.4">Introdução</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i1.13.2" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.13.2" href="regime_tributario_estabelecime.html" target="hmcontent"><span class="heading3" id="s1.13.2" ondblclick="return dblclicked(this)">Regime Tributário Estabelecimento</span></a>
+<ul id="ul1.13.2" style="list-style-type:none">
+<li class="heading4" id="i1.13.2.1" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a1.13.2.1" href="parametros.html" target="hmcontent"><span class="heading4" id="s1.13.2.1" ondblclick="return dblclicked(this)">Parametros Estabelecimento</span></a>
+<ul id="ul1.13.2.1" style="list-style-type:none">
+<li class="heading5" id="i1.13.2.1.1" style="background:url(cicon11.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.13.2.1.1" href="crt.html" target="hmcontent"><span class="heading5" id="s1.13.2.1.1">Impostos</span></a>
+</li>
+<li class="heading5" id="i1.13.2.1.2" style="background:url(cicon11.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading5" id="a1.13.2.1.2" href="nota_eletronica.html" target="hmcontent"><span class="heading5" id="s1.13.2.1.2">Nota Eletrônica</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i1.13.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a1.13.3" href="tributacao_produtos___servicos.html" target="hmcontent"><span class="heading3" id="s1.13.3">Tributação Produtos / Serviços</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i2" data-bg="cicon3.gif;cicon4.gif" style="background:url(cicon4.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a2" href="facs.html" target="hmcontent"><span class="heading1" id="s2" ondblclick="return dblclicked(this)">Faq</span></a>
+<ul id="ul2" style="list-style-type:none">
+<li class="heading2" id="i2.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.1" href="reducao_z_2.html" target="hmcontent"><span class="heading2" id="s2.1">Redução Z 2</span></a>
+</li>
+<li class="heading2" id="i2.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.2" href="aredotamento_2.html" target="hmcontent"><span class="heading2" id="s2.2">Arredondamento/Truncamento nos ECFs Bematech 2</span></a>
+</li>
+<li class="heading2" id="i2.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.3" href="aredotamento2_2.html" target="hmcontent"><span class="heading2" id="s2.3">Os modelos de impressoras fiscais térmicas Bematech 2</span></a>
+</li>
+<li class="heading2" id="i2.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.4" href="aredotamento3_2.html" target="hmcontent"><span class="heading2" id="s2.4">OS ONZE MANDAMENTOS BOM USUÁRIO DE ECF 2</span></a>
+</li>
+<li class="heading2" id="i2.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.5" href="aredotamento4_2.html" target="hmcontent"><span class="heading2" id="s2.5">Aredotamento 2</span></a>
+</li>
+<li class="heading2" id="i2.6" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.6" href="faq.html" target="hmcontent"><span class="heading2" id="s2.6" ondblclick="return dblclicked(this)">FAQ</span></a>
+<ul id="ul2.6" style="list-style-type:none">
+<li class="heading3" id="i2.6.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.6.1" href="reducao_z.html" target="hmcontent"><span class="heading3" id="s2.6.1">Redução Z</span></a>
+</li>
+<li class="heading3" id="i2.6.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.6.2" href="aredotamento.html" target="hmcontent"><span class="heading3" id="s2.6.2">Arredondamento/Truncamento nos ECFs Bematech</span></a>
+</li>
+<li class="heading3" id="i2.6.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.6.3" href="aredotamento2.html" target="hmcontent"><span class="heading3" id="s2.6.3">Os modelos de impressoras fiscais térmicas Bematech</span></a>
+</li>
+<li class="heading3" id="i2.6.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.6.4" href="aredotamento3.html" target="hmcontent"><span class="heading3" id="s2.6.4">OS ONZE MANDAMENTOS BOM USUÁRIO DE ECF</span></a>
+</li>
+<li class="heading3" id="i2.6.5" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.6.5" href="aredotamento4.html" target="hmcontent"><span class="heading3" id="s2.6.5">Aredotamento</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i2.7" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.7" href="consulta_nfe_no_sefaz.html" target="hmcontent"><span class="heading2" id="s2.7" ondblclick="return dblclicked(this)">Consulta NFe no Sefaz</span></a>
+<ul id="ul2.7" style="list-style-type:none">
+<li class="heading3" id="i2.7.1" style="background:url(cicon2.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.7.1" href="recriar_xml_distribuicao.html" target="hmcontent"><span class="heading3" id="s2.7.1">Recriar XML Distribuição</span></a>
+</li>
+<li class="heading3" id="i2.7.2" style="background:url(cicon2.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.7.2" href="copia_chave_.html" target="hmcontent"><span class="heading3" id="s2.7.2">Copia Chave</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i2.8" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.8" href="gtin.html" target="hmcontent"><span class="heading2" id="s2.8">FAQ - GTIN</span></a>
+</li>
+<li class="heading2" id="i2.9" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.9" href="faq_dll.html" target="hmcontent"><span class="heading2" id="s2.9" ondblclick="return dblclicked(this)">Faq DLL</span></a>
+<ul id="ul2.9" style="list-style-type:none">
+<li class="heading3" id="i2.9.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.9.1" href="instalacao_dll.html" target="hmcontent"><span class="heading3" id="s2.9.1">Instalação DLL</span></a>
+</li>
+<li class="heading3" id="i2.9.2" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.9.2" href="registro_no_windows.html" target="hmcontent"><span class="heading3" id="s2.9.2">Registro no Windows</span></a>
+</li>
+<li class="heading3" id="i2.9.3" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.9.3" href="falha_registro_dll.html" target="hmcontent"><span class="heading3" id="s2.9.3">Falha registro DLL</span></a>
+</li>
+<li class="heading3" id="i2.9.4" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.9.4" href="atualizacao_da_biblioteca.html" target="hmcontent"><span class="heading3" id="s2.9.4">Atualização da Biblioteca</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i2.10" data-bg="cicon1.gif;cicon2.gif" style="background:url(cicon2.gif) no-repeat;cursor:pointer;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.10" href="faq_-_assinatura_digital.html" target="hmcontent"><span class="heading2" id="s2.10" ondblclick="return dblclicked(this)">FAX - Assinatura Digital</span></a>
+<ul id="ul2.10" style="list-style-type:none">
+<li class="heading3" id="i2.10.1" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a2.10.1" href="faq_-_assinar.html" target="hmcontent"><span class="heading3" id="s2.10.1">FAQ - Assinar</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i2.11" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.11" href="faq_-_cancelar.html" target="hmcontent"><span class="heading2" id="s2.11">FAQ - CANCELAR</span></a>
+</li>
+<li class="heading2" id="i2.12" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.12" href="faq_-_carta_de_correcao.html" target="hmcontent"><span class="heading2" id="s2.12">FAQ - Carta de Correção</span></a>
+</li>
+<li class="heading2" id="i2.13" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.13" href="faq_-_inutilizacao.html" target="hmcontent"><span class="heading2" id="s2.13">FAQ - Inutilização</span></a>
+</li>
+<li class="heading2" id="i2.14" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.14" href="faq-_di.html" target="hmcontent"><span class="heading2" id="s2.14">FAQ - DI</span></a>
+</li>
+<li class="heading2" id="i2.15" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.15" href="csosn_x_cst.html" target="hmcontent"><span class="heading2" id="s2.15">CSOSN x CST</span></a>
+</li>
+<li class="heading2" id="i2.16" style="background:url(cicon9.gif) no-repeat;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.16" href="faq_-_compartilhamento_pasta.html" target="hmcontent"><span class="heading2" id="s2.16">FAQ - Compartilhamento Pasta</span></a>
+</li>
+</ul>
+</li>
+</ul>
+<script type="text/javascript">loadicons('cicon2.gif','cicon1.gif','cicon9.gif','cicon11.gif','cicon4.gif','cicon3.gif');</script>
+</body>
+</html>
