@@ -1,0 +1,423 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Guia de Orientações e Treinamentos &nbsp;&gt; Instalação e Abertura do HC &nbsp;&gt; Instalação HC &gt; Instalação Parametrização FibServer &gt; Estação Caixa - 2 FIBs</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   /* <meta name="generator" content="Help &amp; Manual" /> */
+   <meta name="keywords" content="" />
+   <meta name="description" content="5 – CAIXA COM 2 FIBS; &nbsp;Passo 01: Instalando OU ATUALIZANDO caixa com 2 conttroller_fibserver; &nbsp;Verificar a versão do Firebird, eliminando fbclient´s de outras versões, deixando" />
+   <meta http-equiv="X-UA-Compatible" content="IE=8" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet">
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+             padding:0; 
+             overflow: hidden;
+             background: #FFFFFF; 
+       } 
+
+      div#printheader { display: none; }
+      #idheader { width:100%; 
+                  height:auto; 
+                  padding: 0; 
+                  margin: 0; 
+       } 
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+  </style>
+   <noscript>
+   <style type="text/css">
+   html, body { overflow: auto; }
+   </style> 
+   </noscript>
+   <style type="text/css" media="print">
+      span.f_Heading1 { color: black; }
+      #idheader, #printheader img { display:none; }
+      #printheader { display: block; margin-top: 20px; }
+      #idcontent { margin-top: 10px; }
+   </style>   
+
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+   <script type="text/javascript" src="nsh.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "estacaocaixa2fibs.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+<div id="breadcrumbs" style="display:none"><a href="guiadeorientacoestreinamentos.html">Guia de Orientações e Treinamentos&nbsp;</a> &gt; <a href="instalacaoeaberturadohc.html">Instalação e Abertura do HC&nbsp;</a> &gt; <a href="instalacaohc.html">Instalação HC</a> &gt; <a href="instalacaoparametrizacaofibserver.html">Instalação Parametrização FibServer</a></div>
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Estação Caixa - 2 FIBs</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;background:url(topic_header_background.jpg)" cellspacing="0" cellpadding="0"> 
+  <tr valign="bottom">
+    <td align="left" valign="bottom" class="topichead">
+   <p class="crumbs" id="idnav"><b>Navigation:</b>&nbsp;
+   
+   <a href="guiadeorientacoestreinamentos.html">Guia de Orientações e Treinamentos&nbsp;</a> &gt; <a href="instalacaoeaberturadohc.html">Instalação e Abertura do HC&nbsp;</a> &gt; <a href="instalacaohc.html">Instalação HC</a> &gt; <a href="instalacaoparametrizacaofibserver.html">Instalação Parametrização FibServer</a>&nbsp;&gt;</p>
+   <h1 class="p_Heading1"><span class="f_Heading1">Estação Caixa - 2 FIBs</span></h1>
+
+    </td>
+    <td align="right" width="120" valign="middle" class="topichead" id="idnav">
+    
+     <a href="servidorcaixaonline.html"
+        onmouseover="document.images.prev.src='hm_btn_navigate_prev_orange.png'" 
+        onmouseout="document.images.prev.src='hm_btn_navigate_prev.png'"
+        ><img name="prev" src="hm_btn_navigate_prev.png" 
+        border=0 alt="Página anterior"
+        ></a><a href="instalacaoparametrizacaofibserver.html"
+        onmouseover="document.images.main.src='hm_btn_navigate_top_orange.png'" 
+        onmouseout="document.images.main.src='hm_btn_navigate_top.png'"><img 
+        name=main src="hm_btn_navigate_top.png" 
+        border=0 alt="Voltar à visão geral do capítulo"
+        ></a><a href="rede.html"
+        onmouseover="document.images.next.src='hm_btn_navigate_next_orange.png'" 
+        onmouseout="document.images.next.src='hm_btn_navigate_next.png'"><img name=next src="hm_btn_navigate_next.png" border=0 alt="Next page"
+        ></a>
+    </td>
+  </tr>  
+</table>
+<!-- The following code displays Expand All/Collapse All links  below the header in topics containing toggles -->
+  
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p><span style="font-size: 11pt; font-family: Calibri; font-weight: bold; color: #ff0000; text-transform: uppercase; text-decoration: underline;">5 – </span><span style="font-size: 11pt; font-family: Calibri; font-weight: bold; color: #ff0000; text-decoration: underline;">CAIXA COM 2 FIBS;</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 11pt; font-family: Calibri; font-weight: bold; text-transform: uppercase;">Passo 01: Instalando OU ATUALIZANDO caixa com 2 conttroller_fibserver;</span></p>
+<p style="margin: 0px 0px 0px 24px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify; padding: 0px 0px 0px 24px; margin: 0px 0px 0px 24px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:24px;margin-left:-24px">&#9679;</span><span style="font-size: 11pt; font-family: Calibri;">Verificar a versão do Firebird, eliminando fbclient´s de outras versões, deixando apenas a versão 1.5.6;</span></p><p style="text-align: justify; padding: 0px 0px 0px 24px; margin: 0px 0px 0px 24px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:24px;margin-left:-24px">&#9679;</span><span style="font-size: 11pt; font-family: Calibri;">Copiar a mesma versão do executável da atualização do Servidor </span><span style="font-size: 12pt; font-family: Calibri;">(conttroller_instalar.exe)</span><span style="font-size: 11pt; font-family: Calibri;"> para o Caixa;</span></p><p style="text-align: justify; padding: 0px 0px 0px 24px; margin: 0px 0px 0px 24px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:24px;margin-left:-24px">&#9679;</span><span style="font-size: 11pt; font-family: Calibri;">Executar o </span><span style="font-size: 12pt; font-family: Calibri;">conttroller_instalar.exe</span><span style="font-size: 11pt; font-family: Calibri;"> transferido do Servidor para o Caixa; (CASO SEJA 1º INSTALAÇÃO)</span></p><p style="text-align: justify;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: 11pt; font-family: Calibri;">OBS.: Para diminuirmos a incidência de encontrarmos estruturas diferentes nos clientes e eliminarmos dúvidas em relação à configuração dos caixas, a Gerência define através deste manual um padrão que deverá ser seguido para configuração dos caixas.</span></p>
+<p style="text-align: justify;"><span style="font-size: 11pt; font-family: Calibri;">Todo caixa que esteja funcionando dentro de um estabelecimento que possui estrutura de rede (</span><span style="font-size: 11pt; font-family: Calibri; font-weight: bold;">LAN), </span><span style="font-size: 11pt; font-family: Calibri;">deverá ser configurado com dois </span><span style="font-size: 11pt; font-family: Calibri; font-weight: bold;">FIBS</span><span style="font-size: 11pt; font-family: Calibri;"> sendo um </span><span style="font-size: 11pt; font-family: Calibri; font-weight: bold;">(ON-LINE = SERVIDOR)</span><span style="font-size: 11pt; font-family: Calibri;"> e outro </span><span style="font-size: 11pt; font-family: Calibri; font-weight: bold;">(OFF-LINE = CONTINGÊNCIA)</span><span style="font-size: 11pt; font-family: Calibri;"> e fica definido que os nomes dos executáveis do </span><span style="font-size: 11pt; font-family: Calibri; font-weight: bold;">conttroller_fibserver</span><span style="font-size: 11pt; font-family: Calibri;"> localizados na pasta Servidor do caixa ficaram da seguinte forma:</span></p>
+<p>&nbsp;</p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:171px; height:19px; padding:4px; border:solid 1px #000000;"><p><img src="embim10.png" width="135" height="18" style="margin:1px; border:none" alt="" /></p>
+</td>
+<td style="vertical-align:middle; height:19px; padding:4px; border:solid 1px #000000;"><p><span style="font-size: 11pt; font-family: Calibri;">Fib de conexão com a base local (CONTINGÊNCIA)</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:middle; width:171px; height:19px; padding:4px; border:solid 1px #000000;"><p><img src="embim11.png" width="182" height="19" style="margin:1px; border:none" alt="" /></p>
+</td>
+<td style="vertical-align:middle; height:19px; padding:4px; border:solid 1px #000000;"><p><span style="font-size: 11pt; font-family: Calibri;">Fib de conexão com a base do SERVIDOR</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p><span style="font-size: 11pt; font-family: Calibri;">O </span><span style="font-size: 11pt; font-family: Calibri; font-weight: bold;">Conttroller_Fibserver</span><span style="font-size: 11pt; font-family: Calibri;"> será o FIB de Contingência configurado com a porta 9005;</span></p>
+<p><span style="font-size: 11pt; font-family: Calibri;">O </span><span style="font-size: 11pt; font-family: Calibri; font-weight: bold;">Conttroller_Fibserver_Servidor</span><span style="font-size: 11pt; font-family: Calibri;"> será o FIB de conexão com o banco de dados no Servidor com a porta 9000;</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: justify;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify; padding: 0px 0px 0px 24px; margin: 0px 0px 0px 24px;"><span style="font-size:11pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:24px;margin-left:-24px">&#9679;</span><span style="font-size: 11pt; font-family: Calibri;">Executar o Conttroller_FIBServer </span></p><p>&nbsp;</p>
+<p><img src="embim12.png" width="601" height="463" style="margin:1px; border:none" alt="" /></p>
+<p>&nbsp;</p>
+<p><img src="embim13.png" width="184" height="148" style="margin:1px; border:none" alt="" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 11pt; font-family: Calibri; font-weight: bold; text-transform: uppercase;">Passo 04: CONFIGURAÇÃO do FIB_LOCAL (CONEXÃO COM O BANCO DO SERVIDOR);</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 11pt; font-family: Calibri;">Na aba Propriedades configurar da seguinte forma:</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="embim14.png" width="677" height="486" style="margin:1px; border:none" alt="" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 11pt; font-family: Calibri;">Ao clicar no botão </span><img src="embim15.png" width="132" height="28" style="margin:1px; border:none" alt="" /><span style="font-size: 11pt; font-family: Calibri;"> aparecerá a janela abaixo que deverá ser configurada da seguinte forma:</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="embim16.png" width="420" height="204" style="margin:1px; border:none" alt="" /></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><img src="embim17.png" width="110" height="17" style="margin:1px; border:none" alt="" /></p>
+<p><span style="color: #000000;">&nbsp;</span></p>
+<p><img src="embim18.png" width="154" height="15" style="margin:1px; border:none" alt="" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 11pt; font-family: Calibri;">Ao término da configuração do banco, clicar em OK. Ao voltar à janela anterior clicar em </span><img src="embim19.png" width="122" height="26" style="margin:1px; border:none" alt="" /></p>
+<p><span style="font-size: 11pt; font-family: Calibri;">Caso a configuração tenha sido executada corretamente será exibida a mensagem abaixo;</span></p>
+<p>&nbsp;</p>
+<p><img src="embim20.png" width="460" height="148" style="margin:1px; border:none" alt="" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 11pt; font-family: Calibri; font-weight: bold; text-transform: uppercase;">Passo 02: CONFIGURAÇÃO do FIB de contingência;</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 11pt; font-family: Calibri;">Na aba Propriedades configurar da seguinte forma:</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="embim21.png" width="654" height="479" style="margin:1px; border:none" alt="" /></p>
+<p style="border-color: #000000; border-style: solid; border-width: 1px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="border-color: #000000; border-style: solid; border-width: 1px;"><img src="embim22.png" width="140" height="22" style="margin:1px; border:none" alt="" /></p>
+<p style="border-color: #000000; border-style: solid; border-width: 1px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="border-color: #000000; border-style: solid; border-width: 1px;"><img src="embim23.png" width="154" height="15" style="margin:1px; border:none" alt="" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 11pt; font-family: Calibri; font-weight: bold; text-transform: uppercase;">Passo 03: CONFIGURANDO O BANCO;</span></p>
+<p><span style="font-size: 11pt; font-family: Calibri;">Ao clicar no botão </span><img src="embim24.png" width="132" height="28" style="margin:1px; border:none" alt="" /><span style="font-size: 11pt; font-family: Calibri;"> aparecerá a janela abaixo que deverá ser configurada da seguinte forma:</span></p>
+<p>&nbsp;</p>
+<p style="border-color: #000000; border-style: solid; border-width: 1px;"><img src="embim25.png" width="382" height="192" style="margin:1px; border:none" alt="" /></p>
+<p style="border-color: #000000; border-style: solid; border-width: 1px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="border-color: #000000; border-style: solid; border-width: 1px;"><img src="embim26.png" width="100" height="16" style="margin:1px; border:none" alt="" /></p>
+<p style="border-color: #000000; border-style: solid; border-width: 1px;"><span style="color: #000000;">&nbsp;</span></p>
+<p style="border-color: #000000; border-style: solid; border-width: 1px;"><img src="embim27.png" width="140" height="14" style="margin:1px; border:none" alt="" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 11pt; font-family: Calibri;">Ao término da configuração do banco, clicar em OK. Ao voltar à janela anterior clicar em </span><img src="embim28.png" width="122" height="26" style="margin:1px; border:none" alt="" /></p>
+<p><span style="font-size: 11pt; font-family: Calibri;">Caso a configuração tenha sido executada com sucesso, ao clicar na aba </span><span style="font-size: 11pt; font-family: Calibri; font-weight: bold;">SOBRE</span><span style="font-size: 11pt; font-family: Calibri;"> aparecerá a mensagem </span><span style="font-size: 11pt; font-family: Calibri; font-style: italic; font-weight: bold;">(CONTINGÊNCIA PAF-ECF)</span><span style="font-size: 11pt; font-family: Calibri;"> em vermelho;</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><img src="embim29.png" width="410" height="315" style="margin:1px; border:none" alt="" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 11pt; font-family: Calibri;">E aparecerá a seguinte janela na barra de tarefas informando que o banco de dados está conectado:</span></p>
+<p>&nbsp;</p>
+<p><img src="embim30.png" width="266" height="86" style="margin:1px; border:none" alt="" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 11pt; font-family: Calibri;">Acessar a pasta ...\Conttroller\Sistemas e abrir o arquivo </span><span style="font-size: 11pt; font-family: Calibri; font-weight: bold;">conttroller.ini</span><span style="font-size: 11pt; font-family: Calibri;"> configurando desta forma para acessar o caixa </span><span style="font-size: 11pt; font-family: Calibri; font-weight: bold;">ON-LINE (BASE DO SERVIDOR) </span><span style="font-size: 11pt; font-family: Calibri;">e</span><span style="font-size: 11pt; font-family: Calibri; font-weight: bold;"> OFF-LINE (BASE LOCAL);</span></p>
+<p>&nbsp;</p>
+<p><span style="font-family: Calibri;">[Parametros]</span></p>
+<p><span style="font-family: Calibri;">Banco=0</span></p>
+<p><span style="font-family: Calibri;">BlocoDeDados=100</span></p>
+<p><span style="font-family: Calibri;">TabularComEnter=1</span></p>
+<p><span style="font-family: Calibri;">[0]</span></p>
+<p><span style="font-family: Calibri;">descricao=Adicionar Novo Servidor</span></p>
+<p><span style="font-family: Calibri;">ip=localhost</span></p>
+<p><span style="font-family: Calibri;">porta=9000</span></p>
+<p><span style="font-family: Calibri;">[Servidores]</span></p>
+<p><span style="font-family: Calibri;">porta=9000</span></p>
+<p><span style="font-family: Calibri;">endereco=</span><span style="font-size: 11pt; font-family: Calibri; font-weight: bold;">127.0.0.1</span></p>
+<p><span style="font-family: Calibri;">[1]</span></p>
+<p><span style="font-family: Calibri;">descricao=ON-LINE (USAR ESTE)</span></p>
+<p><span style="font-family: Calibri;">ip= </span><span style="font-size: 11pt; font-family: Calibri; font-weight: bold;">127.0.0.1</span><span style="font-family: Calibri;"> </span></p>
+<p><span style="font-family: Calibri;">porta=9000</span></p>
+<p><span style="font-family: Calibri;">[2] </span></p>
+<p><span style="font-family: Calibri;">descricao=OFF-LINE (NÃO USAR ESTE)</span></p>
+<p><span style="font-family: Calibri;">ip=</span><span style="font-size: 11pt; font-family: Calibri; font-weight: bold;">127.0.0.1</span></p>
+<p><span style="font-family: Calibri;">porta=9005</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 11pt; font-family: Calibri;">Após ter configurado o </span><span style="font-size: 11pt; font-family: Calibri; font-weight: bold;">conttroller.ini,</span><span style="font-size: 11pt; font-family: Calibri;"> criar um atalho do Automação PAF na área de trabalho da estação do Caixa, clicar em &nbsp;propriedades e acrescentar no destino </span><span style="font-size: 11pt; font-family: Calibri; font-weight: bold;">/SERVIDORES</span><span style="font-size: 11pt; font-family: Calibri;">.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 11pt; font-family: Calibri; font-weight: bold; text-transform: uppercase;">Passo 05: CONFIGURANDO PARÂMETRO DE ESTAÇÃO;</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 11pt; font-family: Calibri;">Acessar o parâmetro de estação e configurar a estação do caixa conforme orientação abaixo:</span></p>
+<p>&nbsp;</p>
+<p style="border-color: #000000; border-style: solid; border-width: 1px;"><img src="embim31.png" width="513" height="322" style="margin:1px; border:none" alt="" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 11pt; font-family: Calibri; font-weight: bold;">OBS.:</span><span style="font-size: 11pt; font-family: Calibri;"> Para que todos os FIBs fiquem em execução ao mesmo tempo deve desabilitar a opção de controle remoto:</span></p>
+<p>&nbsp;</p>
+<p style="border-color: #000000; border-style: solid; border-width: 1px;"><img src="embim32.png" width="445" height="282" style="margin:1px; border:none" alt="" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: 11pt; font-family: Calibri;">Se na aba “Controle Remoto” o campo Controle Remoto estiver </span><span style="font-size: 11pt; font-family: Calibri; font-weight: bold;">MARCADO</span><span style="font-size: 11pt; font-family: Calibri;">, os demais </span><span style="font-size: 11pt; font-family: Calibri; font-weight: bold;">Conttroller_FIBServer</span><span style="font-size: 11pt; font-family: Calibri;"> não ficarão em execução;</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: 12pt; font-family: Calibri; font-weight: bold;">OBS.: </span><span style="font-size: 11pt; font-family: Calibri;">Sendo o CAIXA o mesmo SERVIDOR, as configurações do conttroller_fibserver e do Conttroller.ini em relação a um SERVIDOR não alteram, alterando somente no banco de dados na tabela ZEOS_CONF configurando da seguinte forma:</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;"><table style="border:none; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:50px; background-color:#808080; padding:4px; border:solid 1px #000000;"><p><span style="font-size: 11pt; font-family: Calibri; font-weight: bold;">ON LINE</span></p>
+</td>
+<td style="vertical-align:top; width:34px; background-color:#808080; padding:4px; border:solid 1px #000000;"><p><span style="font-size: 11pt; font-family: Calibri; font-weight: bold;">TIPO</span></p>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:50px; padding:4px; border:solid 1px #000000;"><p><span style="font-size: 11pt; font-family: Calibri;">Sim</span></p>
+</td>
+<td style="vertical-align:top; width:34px; padding:4px; border:solid 1px #000000;"><p><span style="font-size: 11pt; font-family: Calibri;">DUAL</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p>&nbsp;</p>
+<p><span style="font-size: 11pt; font-family: Calibri;">No parâmetro de estação configurar como segue a figura abaixo:</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="border-color: #000000; border-style: solid; border-width: 1px;"><img src="embim33.png" width="484" height="373" style="margin:1px; border:none" alt="" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+var lastSlashPos = document.URL.lastIndexOf("/") > document.URL.lastIndexOf("\\") ? document.URL.lastIndexOf("/") : document.URL.lastIndexOf("\\");
+if( document.URL.substring(lastSlashPos + 1, lastSlashPos + 4).toLowerCase() != "~hh" )
+{
+ if (document.all) setTimeout(function() {nsrInit();},20); 
+    else nsrInit();
+ } 
+
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this page:&nbsp;</b><a href="'+baseurl+'index.html' +
+'?estacaocaixa2fibs.html" target="_top">'+baseurl+'index.html?estacaocaixa2fibs.html</a></p>');
+
+</script>
+</body>
+</html>
